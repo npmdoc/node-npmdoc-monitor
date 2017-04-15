@@ -1,0 +1,30 @@
+<svg height="430" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="430" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">20 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ monitor@0.6.10 </tspan>
+<tspan x="10" y="90">  ├── backbone@0.9.9 </tspan>
+<tspan x="10" y="106">  ├── backbone-callbacks@0.1.7 </tspan>
+<tspan x="10" y="122">  ├── config@0.4.37 </tspan>
+<tspan x="10" y="138">  ├─┬ cron@0.1.3 </tspan>
+<tspan x="10" y="154">  │ └── nodeunit@0.5.2 </tspan>
+<tspan x="10" y="170">  ├─┬ socket.io@0.9.17 </tspan>
+<tspan x="10" y="186">  │ ├── base64id@0.1.0 </tspan>
+<tspan x="10" y="202">  │ ├── policyfile@0.0.4 </tspan>
+<tspan x="10" y="218">  │ ├── redis@0.7.3 </tspan>
+<tspan x="10" y="234">  │ └── socket.io-client@0.9.16 </tspan>
+<tspan x="10" y="250">  ├─┬ socket.io-client@0.9.17 </tspan>
+<tspan x="10" y="266">  │ ├─┬ active-x-obfuscator@0.0.1 </tspan>
+<tspan x="10" y="282">  │ │ └── zeparser@0.0.5 </tspan>
+<tspan x="10" y="298">  │ ├── uglify-js@1.2.5 </tspan>
+<tspan x="10" y="314">  │ ├─┬ ws@0.4.32 </tspan>
+<tspan x="10" y="330">  │ │ ├── commander@2.1.0 </tspan>
+<tspan x="10" y="346">  │ │ ├── nan@1.0.0 </tspan>
+<tspan x="10" y="362">  │ │ ├── options@0.0.6 </tspan>
+<tspan x="10" y="378">  │ │ └── tinycolor@0.0.1 </tspan>
+<tspan x="10" y="394">  │ └── xmlhttprequest@1.4.2 </tspan>
+<tspan x="10" y="410">  └── underscore@1.4.4</tspan>
+</text>
+</svg>
