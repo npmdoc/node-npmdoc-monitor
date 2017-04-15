@@ -1,11 +1,13 @@
 # api documentation for  [monitor (v0.6.10)](http://lorenwest.github.com/node-monitor/)  [![npm package](https://img.shields.io/npm/v/npmdoc-monitor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-monitor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-monitor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-monitor)
 #### Runtime monitoring for node.js applications
 
-[![NPM](https://nodei.co/npm/monitor.png?downloads=true)](https://www.npmjs.com/package/monitor)
+[![NPM](https://nodei.co/npm/monitor.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/monitor)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-monitor/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-monitor_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-monitor/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-monitor/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-monitor/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-monitor/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-monitor/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-monitor/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -16,7 +18,6 @@
 {
     "author": {
         "name": "Loren West",
-        "email": "open_source@lorenwest.com",
         "url": "https://github.com/lorenwest"
     },
     "bugs": {
@@ -61,13 +62,11 @@
     "main": "./lib/index.js",
     "maintainers": [
         {
-            "name": "lorenwest",
-            "email": "npm@lorenwest.com"
+            "name": "lorenwest"
         }
     ],
     "name": "monitor",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/lorenwest/node-monitor.git"
@@ -86,6 +85,7 @@
 
 #### [module monitor](#apidoc.module.monitor)
 1.  boolean <span class="apidocSignatureSpan">monitor.</span>commonJS
+1.  [function <span class="apidocSignatureSpan"></span>monitor ()](#apidoc.element.monitor.monitor)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>Backbone.Collection (models, options)](#apidoc.element.monitor.Backbone.Collection)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>Backbone.History ()](#apidoc.element.monitor.Backbone.History)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>Backbone.Model (attributes, options)](#apidoc.element.monitor.Backbone.Model)
@@ -124,12 +124,14 @@
 1.  [function <span class="apidocSignatureSpan">monitor.</span>getLogger (module)](#apidoc.element.monitor.getLogger)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>getRouter ()](#apidoc.element.monitor.getRouter)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>getStatLogger (module)](#apidoc.element.monitor.getStatLogger)
+1.  [function <span class="apidocSignatureSpan">monitor.</span>model ()](#apidoc.element.monitor.model)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>setLoggerClass (LoggerClass)](#apidoc.element.monitor.setLoggerClass)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>setStatLoggerClass (StatLoggerClass)](#apidoc.element.monitor.setStatLoggerClass)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>start (options, callback)](#apidoc.element.monitor.start)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>stop (callback)](#apidoc.element.monitor.stop)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>stringify (value, depth, indent)](#apidoc.element.monitor.stringify)
 1.  [function <span class="apidocSignatureSpan">monitor.</span>toServerString (monitorJSON)](#apidoc.element.monitor.toServerString)
+1.  [function <span class="apidocSignatureSpan">monitor.</span>toString ()](#apidoc.element.monitor.toString)
 1.  object <span class="apidocSignatureSpan">monitor.</span>Backbone
 1.  object <span class="apidocSignatureSpan">monitor.</span>Backbone.Collection.prototype
 1.  object <span class="apidocSignatureSpan">monitor.</span>Backbone.Events
@@ -167,6 +169,7 @@
 1.  object <span class="apidocSignatureSpan">monitor.</span>SyncProbe.prototype
 1.  object <span class="apidocSignatureSpan">monitor.</span>_.prototype
 1.  object <span class="apidocSignatureSpan">monitor.</span>__super__
+1.  object <span class="apidocSignatureSpan">monitor.</span>model.prototype
 
 #### [module monitor.Backbone](#apidoc.module.monitor.Backbone)
 1.  boolean <span class="apidocSignatureSpan">monitor.Backbone.</span>emulateHTTP
@@ -1029,9 +1032,74 @@
 1.  object <span class="apidocSignatureSpan">monitor.__super__.</span>changed
 1.  string <span class="apidocSignatureSpan">monitor.__super__.</span>idAttribute
 
+#### [module monitor.model](#apidoc.module.monitor.model)
+1.  boolean <span class="apidocSignatureSpan">monitor.model.</span>commonJS
+1.  [function <span class="apidocSignatureSpan">monitor.</span>model ()](#apidoc.element.monitor.model.model)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Connection ()](#apidoc.element.monitor.model.Connection)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>DataModelProbe ()](#apidoc.element.monitor.model.DataModelProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>FileProbe ()](#apidoc.element.monitor.model.FileProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>InspectProbe ()](#apidoc.element.monitor.model.InspectProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>List ()](#apidoc.element.monitor.model.List)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Log (module)](#apidoc.element.monitor.model.Log)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>LogProbe ()](#apidoc.element.monitor.model.LogProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>PollingProbe ()](#apidoc.element.monitor.model.PollingProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Probe ()](#apidoc.element.monitor.model.Probe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>ProcessProbe ()](#apidoc.element.monitor.model.ProcessProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>RecipeProbe ()](#apidoc.element.monitor.model.RecipeProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>ReplProbe ()](#apidoc.element.monitor.model.ReplProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Router ()](#apidoc.element.monitor.model.Router)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Server ()](#apidoc.element.monitor.model.Server)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Stat (module)](#apidoc.element.monitor.model.Stat)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>StatProbe ()](#apidoc.element.monitor.model.StatProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>StreamProbe ()](#apidoc.element.monitor.model.StreamProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>Sync (className, options)](#apidoc.element.monitor.model.Sync)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>SyncProbe ()](#apidoc.element.monitor.model.SyncProbe)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>_ (obj)](#apidoc.element.monitor.model._)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>deepCopy (value, depth)](#apidoc.element.monitor.model.deepCopy)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.model.extend)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>generateUniqueCollectionId (collection, prefix)](#apidoc.element.monitor.model.generateUniqueCollectionId)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>generateUniqueId ()](#apidoc.element.monitor.model.generateUniqueId)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>getLogger (module)](#apidoc.element.monitor.model.getLogger)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>getRouter ()](#apidoc.element.monitor.model.getRouter)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>getStatLogger (module)](#apidoc.element.monitor.model.getStatLogger)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>setLoggerClass (LoggerClass)](#apidoc.element.monitor.model.setLoggerClass)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>setStatLoggerClass (StatLoggerClass)](#apidoc.element.monitor.model.setStatLoggerClass)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>start (options, callback)](#apidoc.element.monitor.model.start)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>stop (callback)](#apidoc.element.monitor.model.stop)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>stringify (value, depth, indent)](#apidoc.element.monitor.model.stringify)
+1.  [function <span class="apidocSignatureSpan">monitor.model.</span>toServerString (monitorJSON)](#apidoc.element.monitor.model.toServerString)
+1.  object <span class="apidocSignatureSpan">monitor.model.</span>Backbone
+1.  object <span class="apidocSignatureSpan">monitor.model.</span>Config
+1.  object <span class="apidocSignatureSpan">monitor.model.</span>Cron
+1.  object <span class="apidocSignatureSpan">monitor.model.</span>__super__
+
+#### [module monitor.model.prototype](#apidoc.module.monitor.model.prototype)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>connect (callback)](#apidoc.element.monitor.model.prototype.connect)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>constructor ()](#apidoc.element.monitor.model.prototype.constructor)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>control (name, params, callback)](#apidoc.element.monitor.model.prototype.control)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>disconnect (callback)](#apidoc.element.monitor.model.prototype.disconnect)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>getConnection ()](#apidoc.element.monitor.model.prototype.getConnection)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>initialize (params, options)](#apidoc.element.monitor.model.prototype.initialize)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>isConnected ()](#apidoc.element.monitor.model.prototype.isConnected)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>onChange ()](#apidoc.element.monitor.model.prototype.onChange)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>toMonitorJSON (options)](#apidoc.element.monitor.model.prototype.toMonitorJSON)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>toProbeJSON (options)](#apidoc.element.monitor.model.prototype.toProbeJSON)
+1.  [function <span class="apidocSignatureSpan">monitor.model.prototype.</span>toServerString ()](#apidoc.element.monitor.model.prototype.toServerString)
+1.  object <span class="apidocSignatureSpan">monitor.model.prototype.</span>defaults
+
 
 
 # <a name="apidoc.module.monitor"></a>[module monitor](#apidoc.module.monitor)
+
+#### <a name="apidoc.element.monitor.monitor"></a>[function <span class="apidocSignatureSpan"></span>monitor ()](#apidoc.element.monitor.monitor)
+- description and source-code
+```javascript
+monitor = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection"></a>[function <span class="apidocSignatureSpan">monitor.</span>Backbone.Collection (models, options)](#apidoc.element.monitor.Backbone.Collection)
 - description and source-code
@@ -1245,23 +1313,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Log"></a>[function <span class="apidocSignatureSpan">monitor.</span>Log (module)](#apidoc.element.monitor.Log)
@@ -1354,23 +1406,7 @@ Server = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-* due to a firewall or browser restriction, the monitor will attempt the
-* connection to the probe through the gateway server.
-*
-* The server specified in this method must have been started as a gateway
-* like this:
-*
-*     // Start a monitor server and act as a gateway
-*     var server = new Monitor.Server({gateway:true});
-*
-* @method setGateway
-* @param options {Object} - Connection parameters
-*   @param options.hostName {String} - Name of the gateway host
-*   @param options.hostPort {Integer} - Port number to connect with
-*   @param options.url {String} - The URL used to connect (created, or used if supplied)
-*   @param options.socket {io.socket} - Pre-connected socket.io socket to the gateway server.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Server.List"></a>[function <span class="apidocSignatureSpan">monitor.</span>Server.List ()](#apidoc.element.monitor.Server.List)
@@ -1434,23 +1470,7 @@ Sync = function (className, options) {
 ```
 - example usage
 ```shell
-...
-* functionality to any Backbone data model.
-*
-* The returned function can be assigned to the '''sync''' element when defining the
-* data model:
-*
-*     var BlogEntry = Backbone.Model.extend({
-*       ...
-*       sync: Monitor.Sync('BlogEntry'),
-*       ...
-*     });
-*
-* The sync function can also be assigned to any Backbone model after construction:
-*
-*     var myBook = new Book({id:"44329"});
-*     myBook.sync = Monitor.Sync('Book');
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.SyncProbe"></a>[function <span class="apidocSignatureSpan">monitor.</span>SyncProbe ()](#apidoc.element.monitor.SyncProbe)
@@ -1548,23 +1568,7 @@ deepCopy = function (value, depth) {
 ```
 - example usage
 ```shell
-...
-* @protected
-* @param name {String} The message name to send
-* @param args... {Mixed} Variable number of arguments to send with the message
-* @param callback {Function} Called when remote sends a reply
-*/
-emit: function() {
-  var t = this, socket = t.get('socket');
-  log.info(t.logId + 'emit', Monitor.deepCopy(arguments, 5));
-  socket.emit.apply(socket, arguments);
-},
-
-/**
-* Bind the specified handler to the remote socket message.
-*
-* Only a single handler (per message name) can be bound using this method.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.extend"></a>[function <span class="apidocSignatureSpan">monitor.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.extend)
@@ -1605,23 +1609,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.generateUniqueCollectionId"></a>[function <span class="apidocSignatureSpan">monitor.</span>generateUniqueCollectionId (collection, prefix)](#apidoc.element.monitor.generateUniqueCollectionId)
@@ -1648,22 +1636,7 @@ generateUniqueCollectionId = function (collection, prefix) {
 ```
 - example usage
 ```shell
-...
-
-// Default the firewall value
-if (_.isUndefined(options.firewall)) {
-  options = _.extend({},options, {firewall: t.firewall});
-}
-
-// Generate a unique ID for the connection
-options.id = Monitor.generateUniqueCollectionId(t.connections);
-
-var connStr = 'Conn_' + options.id;
-if (options.hostName) {
-  connStr += ' - ' + options.hostName + ':' + options.hostPort;
-}
-log.info('addConnection', connStr);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.generateUniqueId"></a>[function <span class="apidocSignatureSpan">monitor.</span>generateUniqueId ()](#apidoc.element.monitor.generateUniqueId)
@@ -1678,23 +1651,7 @@ generateUniqueId = function () {
 ```
 - example usage
 ```shell
-...
-* @protected
-* @return hostName {String} - The platform's host name, or an otherwise stable ID
-*/
-getHostName: function() {
-  var localStorage = root.localStorage;
-  if (!hostName) {
-    if (localStorage) {hostName = localStorage.hostName;}
-    hostName = hostName || Monitor.generateUniqueId();
-    if (localStorage) {localStorage.hostName = hostName;}
-  }
-  return hostName;
-},
-
-/**
-* Set the current host name.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.getLogger"></a>[function <span class="apidocSignatureSpan">monitor.</span>getLogger (module)](#apidoc.element.monitor.getLogger)
@@ -1706,23 +1663,7 @@ getLogger = function (module) {
 ```
 - example usage
 ```shell
-...
-// For further details and documentation:
-// http://lorenwest.github.com/node-monitor
-(function(root){
-
-// Module loading
-var Monitor = root.Monitor || require('./Monitor'),
-    Cron = Monitor.Cron, _ = Monitor._, Backbone = Monitor.Backbone,
-    log = Monitor.getLogger('Connection'),
-    stat = Monitor.getStatLogger('Connection'),
-    Config = Monitor.Config, SocketIO = root.io || require('socket.io-client'),
-    Probe = Monitor.Probe,
-    nextConnectionNum = 1;
-
-/**
-* Core monitor classes
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.getRouter"></a>[function <span class="apidocSignatureSpan">monitor.</span>getRouter ()](#apidoc.element.monitor.getRouter)
@@ -1750,23 +1691,7 @@ getRouter = function () {
 ```
 - example usage
 ```shell
-...
-var pid = typeof process === 'undefined' ? 1 : process.pid;
-
-// Determine the app instance
-var appInstance = '' + (typeof process === 'undefined' ? pid : process.env.NODE_APP_INSTANCE || pid);
-
-// Exchange connection information
-socket.emit('connection:info', {
-  hostName:Monitor.getRouter().getHostName(),
-  appName:Config.Monitor.appName,
-  appInstance: appInstance,
-  pid: pid,
-  probeClasses: _.keys(Probe.classes),
-  gateway:t.get('gateway'),
-  firewall:t.get('firewall')
-});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.getStatLogger"></a>[function <span class="apidocSignatureSpan">monitor.</span>getStatLogger (module)](#apidoc.element.monitor.getStatLogger)
@@ -1778,23 +1703,17 @@ getStatLogger = function (module) {
 ```
 - example usage
 ```shell
-...
-// http://lorenwest.github.com/node-monitor
-(function(root){
+n/a
+```
 
-// Module loading
-var Monitor = root.Monitor || require('./Monitor'),
-    Cron = Monitor.Cron, _ = Monitor._, Backbone = Monitor.Backbone,
-    log = Monitor.getLogger('Connection'),
-    stat = Monitor.getStatLogger('Connection'),
-    Config = Monitor.Config, SocketIO = root.io || require('socket.io-client'),
-    Probe = Monitor.Probe,
-    nextConnectionNum = 1;
-
-/**
-* Core monitor classes
-*
-...
+#### <a name="apidoc.element.monitor.model"></a>[function <span class="apidocSignatureSpan">monitor.</span>model ()](#apidoc.element.monitor.model)
+- description and source-code
+```javascript
+model = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.setLoggerClass"></a>[function <span class="apidocSignatureSpan">monitor.</span>setLoggerClass (LoggerClass)](#apidoc.element.monitor.setLoggerClass)
@@ -1832,18 +1751,7 @@ setStatLoggerClass = function (StatLoggerClass) {
 ```
 - example usage
 ```shell
-...
-    return new RegExp(regexStr, modifier);
-  };
-
-  // Mixin event processing for the Stat class
-  _.extend(Stat, EventEmitter);
-
-  // Expose this class from the Monitor module
-  Monitor.setStatLoggerClass(Stat);
-
-}(this));
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.start"></a>[function <span class="apidocSignatureSpan">monitor.</span>start (options, callback)](#apidoc.element.monitor.start)
@@ -1900,23 +1808,7 @@ stop = function (callback) {
 ```
 - example usage
 ```shell
-...
-server.on('clientError', function(err){
-  log.error('bindEvents', 'clientError detected on server', err);
-  t.trigger('error', err);
-});
-server.on('close', function(err){
-  server.hasEmittedClose = true;
-  log.info('bindEvents.serverClose', 'Server has closed', err);
-  t.stop();
-});
-
-// Start up the socket.io server.
-var socketIoParams = {
-  log: false
-};
-t.socketServer = SocketIO.listen(server, socketIoParams);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.stringify"></a>[function <span class="apidocSignatureSpan">monitor.</span>stringify (value, depth, indent)](#apidoc.element.monitor.stringify)
@@ -1933,23 +1825,7 @@ stringify = function (value, depth, indent) {
 ```
 - example usage
 ```shell
-...
-      };
-
-      // Client-side listener - for persisting changes to the server
-      var modelListener = function(changedModel, options) {
-options = options || {};
-
-// Don't persist unless the model is different
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(model.syncMonitor.get('model'))))) {
-  logger.info('modelListener.noChanges', t.className, model.toJSON());
-  return;
-}
-
-// Disconnect listeners if the ID changes
-if (model.get('id') !== modelId) {
-  logger.info('modelListener.alteredId', t.className, model.toJSON());
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.toServerString"></a>[function <span class="apidocSignatureSpan">monitor.</span>toServerString (monitorJSON)](#apidoc.element.monitor.toServerString)
@@ -1968,23 +1844,19 @@ toServerString = function (monitorJSON) {
 ```
 - example usage
 ```shell
-...
-callback = callback || function(){};
-var t = this,
-    monitorJSON = monitor.toMonitorJSON(),
-    probeJSON = null,
-    probeName = monitorJSON.probeName,
-    probeClass = monitorJSON.probeClass,
-    startTime = Date.now(),
-    monitorStr = probeClass + '.' + monitor.toServerString().replace(/:/g, '.');
+n/a
+```
 
-// Class name must be set
-if (!probeClass && !probeName) {
-  var errStr = 'probeName or probeClass must be set';
-  log.error('connectMonitor', errStr);
-  return callback(errStr);
+#### <a name="apidoc.element.monitor.toString"></a>[function <span class="apidocSignatureSpan">monitor.</span>toString ()](#apidoc.element.monitor.toString)
+- description and source-code
+```javascript
+toString = function () {
+    return toString;
 }
-...
+```
+- example usage
+```shell
+n/a
 ```
 
 
@@ -2107,22 +1979,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.listenTo"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.</span>listenTo (object, events, callback)](#apidoc.element.monitor.Backbone.listenTo)
@@ -2188,23 +2045,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.on"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.</span>on (name, callback, context)](#apidoc.element.monitor.Backbone.on)
@@ -2371,23 +2212,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.unbind"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.</span>unbind (name, callback, context)](#apidoc.element.monitor.Backbone.unbind)
@@ -2486,23 +2311,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -2635,23 +2444,7 @@ add = function (models, options) {
 ```
 - example usage
 ```shell
-...
-    connection.off('disconnect', onConnect);
-    log.info('disconnected', connStr, (Date.now() - startTime) + 'ms');
-  };
-  connection.on('connect', onConnect);
-  connection.on('disconnect', onDisconnect);
-
-  // Add to the connections
-  t.connections.add(connection);
-  return connection;
-},
-
-/**
-* Remove a connection from the router.
-*
-* This is called to remove the connection and associated routes from the router.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.all"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>all ()](#apidoc.element.monitor.Backbone.Collection.prototype.all)
@@ -2707,22 +2500,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.chain"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>chain ()](#apidoc.element.monitor.Backbone.Collection.prototype.chain)
@@ -2746,23 +2524,7 @@ clone = function () {
 ```
 - example usage
 ```shell
-...
-        var onConnect = function(error, probe) {
-if (error) {return callback(error);}
-probeJSON = probe.toJSON();
-probeJSON.probeId = probeJSON.id; delete probeJSON.id;
-monitor.probe = probe;
-
-// Keep the last known probe state for effective updating
-monitor._probeValues = _.clone(probeJSON);
-
-// Perform the initial set silently.  This assures the initial
-// probe contents are available on the connect event,
-// but doesn't fire a change event before connect.
-monitor.set(probeJSON, {silent:true});
-
-// Watch the probe for changes.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.collect"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>collect ()](#apidoc.element.monitor.Backbone.Collection.prototype.collect)
@@ -2856,22 +2618,7 @@ each = function () {
 ```
 - example usage
 ```shell
-...
-  t.addHostCallbacks[hostName].forEach(function(cb) {
-    cb(error);
-  });
-  delete t.addHostCallbacks[hostName];
-};
-
-// Build the list of ports already connected
-t.connections.each(function(connection){
-  var host = connection.get('hostName').toLowerCase();
-  var port = connection.get('hostPort');
-  if (host === hostName && port >= portStart && port <= portEnd) {
-    connectedPorts.push(port);
-  }
-});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.every"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>every ()](#apidoc.element.monitor.Backbone.Collection.prototype.every)
@@ -2929,23 +2676,7 @@ fetch = function () {
 ```
 - example usage
 ```shell
-...
-*       ...
-*     });
-*
-* The sync function can also be assigned to any Backbone model after construction:
-*
-*     var myBook = new Book({id:"44329"});
-*     myBook.sync = Monitor.Sync('Book');
-*     myBook.fetch();
-*
-* In addition to providing the standard '''fetch''', '''save''', and '''destroy'''
-* functionality, Sync offers *live data synchronization*, updating the data model
-* as changes are detected on the server.
-*
-*     // Turn on live data synchronization
-*     myBook.fetch({liveSync:true});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.filter"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>filter ()](#apidoc.element.monitor.Backbone.Collection.prototype.filter)
@@ -2959,23 +2690,7 @@ filter = function () {
 ```
 - example usage
 ```shell
-...
-    * @protected
-    * @param hostName {String} - Host name to search for (null = any host)
-    * @param appName {String} - App name to search for (null = any app)
-    * @return connections {Array of Connection} - An array of Connection objects matching the criteria
-    */
-    findConnections: function(hostName, appName) {
-      var t = this;
-      return t.connections.filter(function(conn) {
-
-// Host or app matches if not specified or if specified and equal
-var matchesHost = !hostName || conn.isThisHost(hostName);
-var matchesApp = !appName || appName === conn.get('remoteAppName');
-var remoteFirewall = conn.get('remoteFirewall');
-
-// This is a match if host + app matches, and it's not firewalled
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.find"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>find ()](#apidoc.element.monitor.Backbone.Collection.prototype.find)
@@ -2989,23 +2704,7 @@ find = function () {
 ```
 - example usage
 ```shell
-...
-if (t.runningProbesByKey[probeName] || Probe.classes[probeClass] != null) {
-  return callback(null, null);
-}
-
-// Give named auto-start probes time to start up
-var autoStarts = Monitor.Config.Monitor.autoStart;
-if (probeName && !probeClass && autoStarts.length) {
-  var autoStart = Monitor._.find(autoStarts, function(probeDef) {
-    return probeDef.probeName === probeName;
-  });
-  if (autoStart) {
-    setTimeout(function() {
-      t.determineConnection(monitorJSON, makeNewConnections, callback);
-    },10);
-    return;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.first"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>first ()](#apidoc.element.monitor.Backbone.Collection.prototype.first)
@@ -3061,23 +2760,7 @@ forEach = function () {
 ```
 - example usage
 ```shell
-...
-
-  // Allow probes to be externally identified by name
-  if (probeJSON.probeName) {
-    return probeJSON.probeName;
-  }
-
-  if (initParams) {
-    _.keys(initParams).sort().forEach(function(key){
-      probeKey += ':' + key + '=' + initParams[key];
-    });
-  }
-  return probeKey;
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.get"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>get (obj)](#apidoc.element.monitor.Backbone.Collection.prototype.get)
@@ -3164,23 +2847,7 @@ indexOf = function () {
 ```
 - example usage
 ```shell
-...
-    set_control: function(attrs, callback) {
-var t = this,
-    writableAttributes = t.get('writableAttributes') || [];
-
-// Validate the attributes are writable
-if (writableAttributes !== '*') {
-  for (var attrName in attrs) {
-    if (writableAttributes.indexOf(attrName) < 0) {
-      return callback({code:'NOT_WRITABLE', msg: 'Attribute not writable: ' + attrName});
-    }
-  }
-}
-
-// Set the data
-var error = null;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.initial"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>initial ()](#apidoc.element.monitor.Backbone.Collection.prototype.initial)
@@ -3393,23 +3060,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.on"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>on (name, callback, context)](#apidoc.element.monitor.Backbone.Collection.prototype.on)
@@ -3474,23 +3125,7 @@ parse = function (resp) {
 ```
 - example usage
 ```shell
-...
-      };
-
-      // Client-side listener - for persisting changes to the server
-      var modelListener = function(changedModel, options) {
-options = options || {};
-
-// Don't persist unless the model is different
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(model.syncMonitor.get('model'))))) {
-  logger.info('modelListener.noChanges', t.className, model.toJSON());
-  return;
-}
-
-// Disconnect listeners if the ID changes
-if (model.get('id') !== modelId) {
-  logger.info('modelListener.alteredId', t.className, model.toJSON());
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.pluck"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>pluck (attr)](#apidoc.element.monitor.Backbone.Collection.prototype.pluck)
@@ -3530,23 +3165,7 @@ push = function (model, options) {
 ```
 - example usage
 ```shell
-...
-
-// Create an array to hold callbacks for this host
-if (!t.addHostCallbacks[hostName]) {
-  t.addHostCallbacks[hostName] = [];
-}
-
-// Remember this callback and return if we're already adding connections for this host
-if (t.addHostCallbacks[hostName].push(callback) > 1) {
-  return;
-}
-
-// Called when done
-var doneAdding = function(error) {
-  t.addHostCallbacks[hostName].forEach(function(cb) {
-    cb(error);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.reduce"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>reduce ()](#apidoc.element.monitor.Backbone.Collection.prototype.reduce)
@@ -3617,23 +3236,7 @@ remove = function (models, options) {
 ```
 - example usage
 ```shell
-...
-* @protected
-* @param connection {Connection} - The connection to remove
-*/
-removeConnection: function(connection) {
-  var t = this;
-  log.info('removeConnection', 'Conn_' + connection.id);
-  connection.disconnect('connection_removed');
-  t.connections.remove(connection);
-  t.trigger('connection:remove', connection);
-},
-
-/**
-* Connect a Monitor object to a remote Probe
-*
-* This accepts an instance of a Monitor and figures out how to connect it
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.reset"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>reset (models, options)](#apidoc.element.monitor.Backbone.Collection.prototype.reset)
@@ -3654,23 +3257,7 @@ reset = function (models, options) {
 ```
 - example usage
 ```shell
-...
-// Call the callback, but don't stop more than once.
-if (!t.isListening) {
-  return callback();
-}
-
-// Release resources
-t.connections.each(router.removeConnection, router);
-t.connections.reset();
-
-// Shut down the server
-t.isListening = false;
-server.close();
-
-// Send notices
-t.trigger('stop');
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.rest"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>rest ()](#apidoc.element.monitor.Backbone.Collection.prototype.rest)
@@ -3740,23 +3327,7 @@ size = function () {
 ```
 - example usage
 ```shell
-...
-var newModel = model.syncMonitor.get('model');
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(newModel)))) {
-  logger.info('monitorListener.noChanges', t.className, newModel);
-  return;
-}
-
-// Disconnect if the model was deleted or the ID isn't the same
-var isDeleted = (_.size(newModel) === 0);
-if (isDeleted || newModel.id !== modelId)  {
-  logger.info('modelListener.deleted', t.className, newModel);
-  disconnectListeners();
-}
-
-// Forward changes to the model (including server-side delete)
-var newOpts = {isSyncChanging:true};
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.slice"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>slice (begin, end)](#apidoc.element.monitor.Backbone.Collection.prototype.slice)
@@ -3805,23 +3376,7 @@ sort = function (options) {
 ```
 - example usage
 ```shell
-...
-
-  // Allow probes to be externally identified by name
-  if (probeJSON.probeName) {
-    return probeJSON.probeName;
-  }
-
-  if (initParams) {
-    _.keys(initParams).sort().forEach(function(key){
-      probeKey += ':' + key + '=' + initParams[key];
-    });
-  }
-  return probeKey;
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.sortBy"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>sortBy (value, context)](#apidoc.element.monitor.Backbone.Collection.prototype.sortBy)
@@ -3975,23 +3530,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Collection.prototype.unbind"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Collection.prototype.</span>unbind (name, callback, context)](#apidoc.element.monitor.Backbone.Collection.prototype.unbind)
@@ -4137,22 +3676,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Events.listenTo"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Events.</span>listenTo (object, events, callback)](#apidoc.element.monitor.Backbone.Events.listenTo)
@@ -4205,23 +3729,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Events.on"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Events.</span>on (name, callback, context)](#apidoc.element.monitor.Backbone.Events.on)
@@ -4316,23 +3824,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Events.unbind"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Events.</span>unbind (name, callback, context)](#apidoc.element.monitor.Backbone.Events.unbind)
@@ -4433,23 +3925,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -4487,22 +3963,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.History.prototype.checkUrl"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.History.prototype.</span>checkUrl (e)](#apidoc.element.monitor.Backbone.History.prototype.checkUrl)
@@ -4666,23 +4127,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.History.prototype.on"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.History.prototype.</span>on (name, callback, context)](#apidoc.element.monitor.Backbone.History.prototype.on)
@@ -4842,23 +4287,7 @@ stop = function () {
 ```
 - example usage
 ```shell
-...
-server.on('clientError', function(err){
-  log.error('bindEvents', 'clientError detected on server', err);
-  t.trigger('error', err);
-});
-server.on('close', function(err){
-  server.hasEmittedClose = true;
-  log.info('bindEvents.serverClose', 'Server has closed', err);
-  t.stop();
-});
-
-// Start up the socket.io server.
-var socketIoParams = {
-  log: false
-};
-t.socketServer = SocketIO.listen(server, socketIoParams);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.History.prototype.stopListening"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.History.prototype.</span>stopListening (object, events, callback)](#apidoc.element.monitor.Backbone.History.prototype.stopListening)
@@ -4900,23 +4329,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.History.prototype.unbind"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.History.prototype.</span>unbind (name, callback, context)](#apidoc.element.monitor.Backbone.History.prototype.unbind)
@@ -5022,23 +4435,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -5098,23 +4495,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -5178,22 +4559,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Router.prototype.initialize"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Router.prototype.</span>initialize ()](#apidoc.element.monitor.Backbone.Router.prototype.initialize)
@@ -5269,23 +4635,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Router.prototype.on"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Router.prototype.</span>on (name, callback, context)](#apidoc.element.monitor.Backbone.Router.prototype.on)
@@ -5400,23 +4750,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.Router.prototype.unbind"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.Router.prototype.</span>unbind (name, callback, context)](#apidoc.element.monitor.Backbone.Router.prototype.unbind)
@@ -5514,23 +4848,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -5583,22 +4901,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.View.prototype.delegateEvents"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.View.prototype.</span>delegateEvents (events)](#apidoc.element.monitor.Backbone.View.prototype.delegateEvents)
@@ -5703,23 +5006,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.View.prototype.on"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.View.prototype.</span>on (name, callback, context)](#apidoc.element.monitor.Backbone.View.prototype.on)
@@ -5786,23 +5073,7 @@ remove = function () {
 ```
 - example usage
 ```shell
-...
-* @protected
-* @param connection {Connection} - The connection to remove
-*/
-removeConnection: function(connection) {
-  var t = this;
-  log.info('removeConnection', 'Conn_' + connection.id);
-  connection.disconnect('connection_removed');
-  t.connections.remove(connection);
-  t.trigger('connection:remove', connection);
-},
-
-/**
-* Connect a Monitor object to a remote Probe
-*
-* This accepts an instance of a Monitor and figures out how to connect it
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.View.prototype.render"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.View.prototype.</span>render ()](#apidoc.element.monitor.Backbone.View.prototype.render)
@@ -5872,23 +5143,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Backbone.View.prototype.unbind"></a>[function <span class="apidocSignatureSpan">monitor.Backbone.View.prototype.</span>unbind (name, callback, context)](#apidoc.element.monitor.Backbone.View.prototype.unbind)
@@ -5975,23 +5230,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.extend"></a>[function <span class="apidocSignatureSpan">monitor.Connection.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.Connection.extend)
@@ -6032,23 +5271,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -6062,23 +5285,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.List.extend"></a>[function <span class="apidocSignatureSpan">monitor.Connection.List.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.Connection.List.extend)
@@ -6119,23 +5326,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -6182,23 +5373,7 @@ addEvent = function (eventName, handler) {
 ```
 - example usage
 ```shell
-...
-    */
-    bindConnectionEvents: function() {
-var t = this, socket = t.get('socket');
-if (t.socketEvents) {throw new Error('Already connected');}
-t.socketEvents = {};  // key = event name, data = handler
-
-// Failure events
-t.addEvent('connect_failed', function(){
-  t.trigger('error', 'connect failed');
-  t.disconnect('connect failed');
-});
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.bindConnectionEvents"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>bindConnectionEvents ()](#apidoc.element.monitor.Connection.prototype.bindConnectionEvents)
@@ -6265,23 +5440,7 @@ bindConnectionEvents = function () {
 ```
 - example usage
 ```shell
-...
-t.incomingMonitorsById = {};  // Key = probeId, data = {Monitor proxy}
-
-// Create a connection ID for logging
-t.logId = (nextConnectionNum++) + '.';
-
-// Either connect to an URL or with an existing socket
-if (params.socket) {
-  t.bindConnectionEvents();
-  log.info(t.logId + 'connect', {socketId:params.socket.id});
-}
-else if (params.url || (params.hostName && params.hostPort)) {
-  t.connect();
-  log.info(t.logId + 'connect', {url:t.get('url')});
-}
-else {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.connect"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>connect ()](#apidoc.element.monitor.Connection.prototype.connect)
@@ -6362,23 +5521,7 @@ disconnect = function (reason) {
 ```
 - example usage
 ```shell
-...
-  t.connected = false;
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.emit"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>emit ()](#apidoc.element.monitor.Connection.prototype.emit)
@@ -6392,23 +5535,7 @@ emit = function () {
 ```
 - example usage
 ```shell
-...
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-* Disconnect from the remote process
-*
-* This can be called from the underlying transport if it detects a disconnect,
-* or it can be manually called to force a disconnect.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.initialize"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>initialize (params)](#apidoc.element.monitor.Connection.prototype.initialize)
@@ -6458,23 +5585,7 @@ isThisHost = function (hostName) {
 ```
 - example usage
 ```shell
-...
-    * @return connection {Connection} - A Connection object if found, otherwise null
-    */
-    findConnection: function(hostName, appName, appInstance) {
-var t = this, thisInstance = 0;
-return t.connections.find(function(conn) {
-
-  // Host or app matches if not specified or if specified and equal
-  var matchesHost = !hostName || conn.isThisHost(hostName);
-  var matchesApp = !appName || appName === conn.get('remoteAppName');
-  var matchesInstance = !appInstance || appInstance === conn.get('remoteAppInstance');
-  var remoteFirewall = conn.get('remoteFirewall');
-
-  // This is a match if host + app + instance matches, and it's not firewalled
-  return (!remoteFirewall && matchesHost && matchesApp && matchesInstance);
-});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.ping"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>ping (callback)](#apidoc.element.monitor.Connection.prototype.ping)
@@ -6698,23 +5809,7 @@ probeDisconnect = function (params, callback) {
 ```
 - example usage
 ```shell
-...
-  log.info(t.logId + 'probeConnected', logCtxt);
-  stat.time(t.logId + 'probeConnected', duration);
-  callback(null, probe.toJSON());
-  probe.on('change', monitorProxy.probeChange);
-
-  // Disconnect the probe on connection disconnect
-  t.on('disconnect', function() {
-    t.probeDisconnect({probeId:probeId});
-  });
-};
-
-// Connect internally or externally
-if (connection) {
-  router.connectExternal(monitorJSON, connection, onConnect);
-} else {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.removeAllEvents"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>removeAllEvents ()](#apidoc.element.monitor.Connection.prototype.removeAllEvents)
@@ -6731,23 +5826,7 @@ removeAllEvents = function () {
 ```
 - example usage
 ```shell
-...
-  t.connecting = false;
-  t.connected = false;
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Connection.prototype.removeEvent"></a>[function <span class="apidocSignatureSpan">monitor.Connection.prototype.</span>removeEvent (eventName)](#apidoc.element.monitor.Connection.prototype.removeEvent)
@@ -6764,22 +5843,7 @@ removeEvent = function (eventName) {
 ```
 - example usage
 ```shell
-...
-  if (!proxy) {return callback('Probe not running');}
-  if (--proxy.refCount === 0) {
-    // Release probe resources
-    proxy.release();
-    proxy.connection = null;
-    delete connection.remoteProbesById[probeId];
-    delete connection.remoteProbeIdsByKey[proxy.probeKey];
-    connection.removeEvent('probe:change:' + probeId);
-    return connection.emit('probe:disconnect', {probeId:probeId}, function(error){
-      return callback(error);
-    });
-  }
-  callback(null);
-}
-...
+n/a
 ```
 
 
@@ -6881,23 +5945,7 @@ addEvent = function (event) {
 ```
 - example usage
 ```shell
-...
-    */
-    bindConnectionEvents: function() {
-var t = this, socket = t.get('socket');
-if (t.socketEvents) {throw new Error('Already connected');}
-t.socketEvents = {};  // key = event name, data = handler
-
-// Failure events
-t.addEvent('connect_failed', function(){
-  t.trigger('error', 'connect failed');
-  t.disconnect('connect failed');
-});
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Cron.CronJob.prototype.clock"></a>[function <span class="apidocSignatureSpan">monitor.Cron.CronJob.prototype.</span>clock ()](#apidoc.element.monitor.Cron.CronJob.prototype.clock)
@@ -7100,23 +6148,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.DataModelProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.DataModelProbe.</span>extend (params)](#apidoc.element.monitor.DataModelProbe.extend)
@@ -7130,23 +6162,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -7160,23 +6176,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.DataModelProbe.List.extend"></a>[function <span class="apidocSignatureSpan">monitor.DataModelProbe.List.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.DataModelProbe.List.extend)
@@ -7217,23 +6217,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -7361,23 +6345,7 @@ Sync = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-* functionality to any Backbone data model.
-*
-* The returned function can be assigned to the '''sync''' element when defining the
-* data model:
-*
-*     var BlogEntry = Backbone.Model.extend({
-*       ...
-*       sync: Monitor.Sync('BlogEntry'),
-*       ...
-*     });
-*
-* The sync function can also be assigned to any Backbone model after construction:
-*
-*     var myBook = new Book({id:"44329"});
-*     myBook.sync = Monitor.Sync('Book');
-...
+n/a
 ```
 
 
@@ -7415,23 +6383,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.FileProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.FileProbe.</span>extend (params)](#apidoc.element.monitor.FileProbe.extend)
@@ -7445,23 +6397,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.FileProbe.getRootPath"></a>[function <span class="apidocSignatureSpan">monitor.FileProbe.</span>getRootPath ()](#apidoc.element.monitor.FileProbe.getRootPath)
@@ -7783,23 +6719,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 
@@ -7823,23 +6743,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.InspectProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.InspectProbe.</span>extend (params)](#apidoc.element.monitor.InspectProbe.extend)
@@ -7853,23 +6757,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -8011,23 +6899,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.InspectProbe.prototype.set_control"></a>[function <span class="apidocSignatureSpan">monitor.InspectProbe.prototype.</span>set_control (attrs, callback)](#apidoc.element.monitor.InspectProbe.prototype.set_control)
@@ -8070,23 +6942,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.List.extend"></a>[function <span class="apidocSignatureSpan">monitor.List.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.List.extend)
@@ -8127,23 +6983,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -8232,23 +7072,7 @@ _emit = function (type, module, name, args) {
 ```
 - example usage
 ```shell
-...
-*
-* @method increment
-* @param name {String} Dot.separated name of the counter to increment
-* @param [value=1] {Number} Amount to increment the counter by.
-*/
-proto.increment = function(name, value){
-  value = _.isNumber(value) ? value : 1;
-  Stat._emit(this.module, name, value, 'c');
-};
-
-/**
-* Decrement a counter by a specified value
-*
-* Assuming someone is listening to this stat, this is an instruction for that
-* listener to subtract the specified value (usually 1) to their prior value for this stat.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Log.addListener"></a>[function <span class="apidocSignatureSpan">monitor.Log.</span>addListener (type, listener)](#apidoc.element.monitor.Log.addListener)
@@ -8392,23 +7216,7 @@ function emit(type) {
 ```
 - example usage
 ```shell
-...
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-* Disconnect from the remote process
-*
-* This can be called from the underlying transport if it detects a disconnect,
-* or it can be manually called to force a disconnect.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Log.eventNames"></a>[function <span class="apidocSignatureSpan">monitor.Log.</span>eventNames ()](#apidoc.element.monitor.Log.eventNames)
@@ -8675,23 +7483,7 @@ function removeListener(type, listener) {
 ```
 - example usage
 ```shell
-...
-  return t;
-},
-
-// Remove the specified event from the socket
-removeEvent: function(eventName) {
-  var t = this, socket = t.get('socket');
-  if (t.socketEvents && t.socketEvents[eventName]) {
-    socket.removeListener(eventName, t.socketEvents[eventName]);
-    delete t.socketEvents[eventName];
-  }
-  return t;
-},
-
-// Remove all events bound to the socket
-removeAllEvents: function() {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Log.setMaxListeners"></a>[function <span class="apidocSignatureSpan">monitor.Log.</span>setMaxListeners (n)](#apidoc.element.monitor.Log.setMaxListeners)
@@ -8765,23 +7557,7 @@ fatal = function (name) {
 ```
 - example usage
 ```shell
-...
-// On laptop sleep/startup the DNS servers aren't immediately available,
-// resulting in a flood of these for socket.io until DNS services are back up.
-if (err.message === 'ECONNREFUSED, Could not contact DNS servers') {
-  return;
-}
-
-// Don't allow the process to continue in an unknown state.
-log.fatal('moniotor.uncaught', 'Uncaught Exception: ' + err.message);
-log.fatal('moniotor.uncaught', err.stack);
-server.stop(function(){
-  process.exit(1);
-});
-
-// Don't wait around if the server is hung.
-setTimeout(function(){process.exit(1);}, 2000);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Log.prototype.info"></a>[function <span class="apidocSignatureSpan">monitor.Log.prototype.</span>info (name)](#apidoc.element.monitor.Log.prototype.info)
@@ -8793,23 +7569,7 @@ info = function (name) {
 ```
 - example usage
 ```shell
-...
-
-// Create a connection ID for logging
-t.logId = (nextConnectionNum++) + '.';
-
-// Either connect to an URL or with an existing socket
-if (params.socket) {
-  t.bindConnectionEvents();
-  log.info(t.logId + 'connect', {socketId:params.socket.id});
-}
-else if (params.url || (params.hostName && params.hostPort)) {
-  t.connect();
-  log.info(t.logId + 'connect', {url:t.get('url')});
-}
-else {
-  log.error('init', 'Connection must supply a socket, url, or host name/port');
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Log.prototype.trace"></a>[function <span class="apidocSignatureSpan">monitor.Log.prototype.</span>trace (name)](#apidoc.element.monitor.Log.prototype.trace)
@@ -8833,23 +7593,7 @@ warn = function (name) {
 ```
 - example usage
 ```shell
-...
-    }
-  }
-
-  // Set the data
-  var error = null;
-  if (!t.set(attrs)) {
-    error = {code:'VALIDATION_ERROR', msg:'Data set failed validation'};
-    log.warn('set_control', error);
-  }
-  return callback(error);
-},
-
-/**
-* Respond to a ping control sent from a monitor
-*
-...
+n/a
 ```
 
 
@@ -8873,23 +7617,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.LogProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.LogProbe.</span>extend (params)](#apidoc.element.monitor.LogProbe.extend)
@@ -8903,23 +7631,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -8970,23 +7682,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 
@@ -9010,23 +7706,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.PollingProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.PollingProbe.</span>extend (params)](#apidoc.element.monitor.PollingProbe.extend)
@@ -9040,23 +7720,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -9126,23 +7790,7 @@ release = function (){
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 
@@ -9166,23 +7814,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Probe.extend"></a>[function <span class="apidocSignatureSpan">monitor.Probe.</span>extend (params)](#apidoc.element.monitor.Probe.extend)
@@ -9196,23 +7828,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -9287,23 +7903,7 @@ onControl = function (name, params, callback) {
 ```
 - example usage
 ```shell
-...
-      // Proxying requires this form vs. callback as last arg.
-      return monitorProxy.control(params.name, params.params, function(err, returnParams) {
-        onReturn(err, returnParams);
-      });
-    }
-    logId = logId + '.' + probe.probeClass + '.' + params.name;
-    log.info(logId + '.request', {params:params.params, probeId:params.probeId});
-    return probe.onControl(params.name, params.params, onReturn);
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Probe.prototype.ping_control"></a>[function <span class="apidocSignatureSpan">monitor.Probe.prototype.</span>ping_control (params, callback)](#apidoc.element.monitor.Probe.prototype.ping_control)
@@ -9328,23 +7928,7 @@ release = function (){
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Probe.prototype.set_control"></a>[function <span class="apidocSignatureSpan">monitor.Probe.prototype.</span>set_control (attrs, callback)](#apidoc.element.monitor.Probe.prototype.set_control)
@@ -9398,23 +7982,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.ProcessProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.ProcessProbe.</span>extend (params)](#apidoc.element.monitor.ProcessProbe.extend)
@@ -9428,23 +7996,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -9520,23 +8072,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.RecipeProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.RecipeProbe.</span>extend (params)](#apidoc.element.monitor.RecipeProbe.extend)
@@ -9550,23 +8086,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -9719,23 +8239,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.RecipeProbe.prototype.run"></a>[function <span class="apidocSignatureSpan">monitor.RecipeProbe.prototype.</span>run (context)](#apidoc.element.monitor.RecipeProbe.prototype.run)
@@ -9921,23 +8425,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.ReplProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.ReplProbe.</span>extend (params)](#apidoc.element.monitor.ReplProbe.extend)
@@ -9951,23 +8439,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -10119,23 +8591,7 @@ release = function (){
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.ReplProbe.prototype.sh_control"></a>[function <span class="apidocSignatureSpan">monitor.ReplProbe.prototype.</span>sh_control (params, callback)](#apidoc.element.monitor.ReplProbe.prototype.sh_control)
@@ -10203,23 +8659,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -10271,23 +8711,7 @@ addConnection = function (options) {
 ```
 - example usage
 ```shell
-...
-*   @param options.socket {io.socket} - Pre-connected socket.io socket to the gateway server.
-* @return connection {Connection} - The connection with the gateway server
-*/
-setGateway: function(options) {
-  var t = this;
-  options.gateway = false;     // New connection can't be an inbound gateway
-  options.firewall = true;     // Gateways are for outbound requests only
-  return t.defaultGateway = t.addConnection(options);
-},
-
-/**
-* Return a stable host name.
-*
-* @method getHostName
-* @protected
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.addHostConnections"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>addHostConnections (hostName, callback)](#apidoc.element.monitor.Router.prototype.addHostConnections)
@@ -10351,23 +8775,7 @@ addHostConnections = function (hostName, callback) {
 ```
 - example usage
 ```shell
-...
-      if (t.defaultGateway) {
-        connection = t.defaultGateway;
-        return connectedCheck(true);
-      }
-
-      // See if we can establish new connections with the host
-      if (hostName && makeNewConnections) {
-        t.addHostConnections(hostName, function(err) {
-if (err) {
-  log.error('connect.toHost', err);
-  return callback(err);
-}
-
-// Try finding now that new connections have been made
-connection = t.findConnection(hostName, appName, appInstance);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.buildProbeKey"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>buildProbeKey (probeJSON)](#apidoc.element.monitor.Router.prototype.buildProbeKey)
@@ -10392,22 +8800,7 @@ buildProbeKey = function (probeJSON) {
 ```
 - example usage
 ```shell
-...
-    *     @param monitorJSON.initParams {Object} - Probe initialization parameters.
-    * @param callback {Function(error, probeImpl)} - Called when connected
-    */
-    connectInternal: function(monitorJSON, callback) {
-
-// Build a key for this probe from the probeClass and initParams
-var t = this,
-    probeKey = t.buildProbeKey(monitorJSON),
-    probeName = monitorJSON.probeName,
-    probeClass = monitorJSON.probeClass,
-    initParams = monitorJSON.initParams,
-    probeImpl = null;
-
-var whenDone = function(error) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.connectExternal"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>connectExternal (monitorJSON, connection, callback)](#apidoc.element.monitor.Router.prototype.connectExternal)
@@ -10465,23 +8858,7 @@ connectExternal = function (monitorJSON, connection, callback) {
 ```
 - example usage
 ```shell
-...
-      t.on('disconnect', function() {
-        t.probeDisconnect({probeId:probeId});
-      });
-    };
-
-    // Connect internally or externally
-    if (connection) {
-      router.connectExternal(monitorJSON, connection, onConnect);
-    } else {
-      router.connectInternal(monitorJSON, onConnect);
-    }
-  });
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.connectInternal"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>connectInternal (monitorJSON, callback)](#apidoc.element.monitor.Router.prototype.connectInternal)
@@ -10574,23 +8951,7 @@ connectInternal = function (monitorJSON, callback) {
 ```
 - example usage
 ```shell
-...
-      });
-    };
-
-    // Connect internally or externally
-    if (connection) {
-      router.connectExternal(monitorJSON, connection, onConnect);
-    } else {
-      router.connectInternal(monitorJSON, onConnect);
-    }
-  });
-},
-
-/**
-* Process an inbound request to disconnect with a probe
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.connectMonitor"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>connectMonitor (monitor, callback)](#apidoc.element.monitor.Router.prototype.connectMonitor)
@@ -10803,23 +9164,7 @@ determineConnection = function (monitorJSON, makeNewConnections, callback) {
 ```
 - example usage
 ```shell
-...
-      if (firewall) {
-        errorText = 'firewalled';
-        log.error('probeConnect', errorText, logCtxt);
-        return callback(errorText);
-      }
-
-      // Determine the connection to use (or internal)
-      router.determineConnection(monitorJSON, gateway, function(err, connection) {
-        if (err) {return callback(err);}
-        if (connection && !gateway) {return callback('Not a gateway');}
-
-        // Function to run upon connection (internal or external)
-        var onConnect = function(error, probe) {
-
-if (error) {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.disconnectExternal"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>disconnectExternal (connection, probeId, callback)](#apidoc.element.monitor.Router.prototype.disconnectExternal)
@@ -10844,23 +9189,7 @@ disconnectExternal = function (connection, probeId, callback) {
 ```
 - example usage
 ```shell
-...
-    log.info(t.logId + 'probeDisconnected', logCtxt);
-    stat.time(t.logId + 'probeDisconnected', duration);
-    return callback(null);
-  };
-
-  // Disconnect from an internal or external probe
-  if (probe && probe.connection) {
-    router.disconnectExternal(probe.connection, probeId, onDisconnect);
-  } else {
-    router.disconnectInternal(probeId, onDisconnect);
-  }
-},
-
-/**
-* Process an inbound control request to a probe
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.disconnectInternal"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>disconnectInternal (probeId, callback)](#apidoc.element.monitor.Router.prototype.disconnectInternal)
@@ -10887,23 +9216,7 @@ disconnectInternal = function (probeId, callback) {
 ```
 - example usage
 ```shell
-...
-    return callback(null);
-  };
-
-  // Disconnect from an internal or external probe
-  if (probe && probe.connection) {
-    router.disconnectExternal(probe.connection, probeId, onDisconnect);
-  } else {
-    router.disconnectInternal(probeId, onDisconnect);
-  }
-},
-
-/**
-* Process an inbound control request to a probe
-*
-* @method probeControl
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.disconnectMonitor"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>disconnectMonitor (monitor, reason, callback)](#apidoc.element.monitor.Router.prototype.disconnectMonitor)
@@ -10960,23 +9273,7 @@ findConnection = function (hostName, appName, appInstance) {
 ```
 - example usage
 ```shell
-...
-    return callback({err:errStr});
-  }
-  connection = t.defaultGateway;
-  return connectedCheck(true);
-}
-
-// Return if connection is known
-connection = t.findConnection(hostName, appName, appInstance);
-if (connection) {
-  return connectedCheck();
-}
-
-// Prefer the gateway if it exists
-if (t.defaultGateway) {
-  connection = t.defaultGateway;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.findConnections"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>findConnections (hostName, appName)](#apidoc.element.monitor.Router.prototype.findConnections)
@@ -11016,23 +9313,7 @@ getHostName = function () {
 ```
 - example usage
 ```shell
-...
-var pid = typeof process === 'undefined' ? 1 : process.pid;
-
-// Determine the app instance
-var appInstance = '' + (typeof process === 'undefined' ? pid : process.env.NODE_APP_INSTANCE || pid);
-
-// Exchange connection information
-socket.emit('connection:info', {
-  hostName:Monitor.getRouter().getHostName(),
-  appName:Config.Monitor.appName,
-  appInstance: appInstance,
-  pid: pid,
-  probeClasses: _.keys(Probe.classes),
-  gateway:t.get('gateway'),
-  firewall:t.get('firewall')
-});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.initialize"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>initialize ()](#apidoc.element.monitor.Router.prototype.initialize)
@@ -11067,22 +9348,7 @@ removeConnection = function (connection) {
 ```
 - example usage
 ```shell
-...
-
-// Add a connect and disconnect function
-var onConnect = function(){
-  t.trigger('connection:add', connection);
-  log.info('connected', connStr, (Date.now() - startTime) + 'ms');
-};
-var onDisconnect = function(){
-  t.removeConnection(connection);
-  connection.off('connect', onConnect);
-  connection.off('disconnect', onConnect);
-  log.info('disconnected', connStr, (Date.now() - startTime) + 'ms');
-};
-connection.on('connect', onConnect);
-connection.on('disconnect', onDisconnect);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.setFirewall"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>setFirewall (firewall)](#apidoc.element.monitor.Router.prototype.setFirewall)
@@ -11111,24 +9377,7 @@ setGateway = function (options) {
 ```
 - example usage
 ```shell
-...
-* @extends Backbone.Model
-* @constructor
-* @param model - Initial data model.  Can be a JS object or another Model.
-*   @param [model.hostName] {String} The host name to connect with. Used if url isn't present.
-*   @param [model.hostPort] {Number} The host port to connect using. Used if url isn't present.
-*   @param [model.url] {String} The URL used to connect. Built if hostName is supplied.
-*   @param [model.socket] {io.socket} Use this pre-connected socket instead of creating a new one.
-*   @param [model.gateway=false] {Boolean} Allow this connection to use me as a gateway?  See <code><a href="Router.html#method_setGateway
-">Router.setGateway()</a></code>
-*   @param [model.firewall=false] {Boolean} Firewall inbound probe requests on this connection?
-*   @param [model.remoteHostName] {String READONLY} Host name given by the remote server.
-*   @param [model.remoteAppName] {String READONLY} App name given by the remote server.
-*   @param [model.remoteAppInstance] {Integer READONLY} The remote application instance ID running on the host.
-*   @param [model.remotePID] {String READONLY} Remote process ID.
-*   @param [model.remoteProbeClasses] {Array of String READONLY} Array of probe classes available to the remote server.
-*   @param [model.remoteGateway] {Boolean READONLY} Can the remote process act as a gateway?
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Router.prototype.setHostName"></a>[function <span class="apidocSignatureSpan">monitor.Router.prototype.</span>setHostName (name)](#apidoc.element.monitor.Router.prototype.setHostName)
@@ -11155,23 +9404,7 @@ Server = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-* due to a firewall or browser restriction, the monitor will attempt the
-* connection to the probe through the gateway server.
-*
-* The server specified in this method must have been started as a gateway
-* like this:
-*
-*     // Start a monitor server and act as a gateway
-*     var server = new Monitor.Server({gateway:true});
-*
-* @method setGateway
-* @param options {Object} - Connection parameters
-*   @param options.hostName {String} - Name of the gateway host
-*   @param options.hostPort {Integer} - Port number to connect with
-*   @param options.url {String} - The URL used to connect (created, or used if supplied)
-*   @param options.socket {io.socket} - Pre-connected socket.io socket to the gateway server.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Server.List"></a>[function <span class="apidocSignatureSpan">monitor.Server.</span>List ()](#apidoc.element.monitor.Server.List)
@@ -11181,23 +9414,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Server.extend"></a>[function <span class="apidocSignatureSpan">monitor.Server.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.Server.extend)
@@ -11238,23 +9455,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -11268,23 +9469,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Server.List.extend"></a>[function <span class="apidocSignatureSpan">monitor.Server.List.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.Server.List.extend)
@@ -11325,23 +9510,7 @@ extend = function (protoProps, staticProps) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -11417,23 +9586,7 @@ bindEvents = function (callback) {
 ```
 - example usage
 ```shell
-...
-error = {err:'connect:failure', msg: 'no ports available'};
-log.error('start', error);
-return callback(error);
-      }
-
-      // Bind to an existing server, or create a new server
-      if (server) {
-t.bindEvents(callback);
-      } else {
-server = Http.createServer();
-
-// Try next port if a server is listening on this port
-server.on('error', function(err) {
-  if (err.code === 'EADDRINUSE') {
-    // Error if the requested port is in use
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Server.prototype.constructor"></a>[function <span class="apidocSignatureSpan">monitor.Server.prototype.</span>constructor ()](#apidoc.element.monitor.Server.prototype.constructor)
@@ -11577,23 +9730,7 @@ stop = function (callback) {
 ```
 - example usage
 ```shell
-...
-server.on('clientError', function(err){
-  log.error('bindEvents', 'clientError detected on server', err);
-  t.trigger('error', err);
-});
-server.on('close', function(err){
-  server.hasEmittedClose = true;
-  log.info('bindEvents.serverClose', 'Server has closed', err);
-  t.stop();
-});
-
-// Start up the socket.io server.
-var socketIoParams = {
-  log: false
-};
-t.socketServer = SocketIO.listen(server, socketIoParams);
-...
+n/a
 ```
 
 
@@ -11669,23 +9806,7 @@ _buildRegex = function (str) {
 ```
 - example usage
 ```shell
-...
-  if (!fullName) {
-    fullName = module + '.' + name;
-  }
-
-  // Get the regex associated with the name
-  var regex = Stat.eventRegex[eventName];
-  if (!regex) {
-    regex = Stat.eventRegex[eventName] = Stat._buildRegex(eventName);
-  }
-
-  // Test the name with the regex, and emit if it matches
-  if (regex.test(fullName)) {
-    Stat.emit(eventName, module, name, value, type);
-  }
-}
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Stat._emit"></a>[function <span class="apidocSignatureSpan">monitor.Stat.</span>_emit (module, name, value, type)](#apidoc.element.monitor.Stat._emit)
@@ -11730,23 +9851,7 @@ _emit = function (module, name, value, type) {
 ```
 - example usage
 ```shell
-...
-*
-* @method increment
-* @param name {String} Dot.separated name of the counter to increment
-* @param [value=1] {Number} Amount to increment the counter by.
-*/
-proto.increment = function(name, value){
-  value = _.isNumber(value) ? value : 1;
-  Stat._emit(this.module, name, value, 'c');
-};
-
-/**
-* Decrement a counter by a specified value
-*
-* Assuming someone is listening to this stat, this is an instruction for that
-* listener to subtract the specified value (usually 1) to their prior value for this stat.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Stat.addListener"></a>[function <span class="apidocSignatureSpan">monitor.Stat.</span>addListener (type, listener)](#apidoc.element.monitor.Stat.addListener)
@@ -11840,23 +9945,7 @@ function emit(type) {
 ```
 - example usage
 ```shell
-...
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-* Disconnect from the remote process
-*
-* This can be called from the underlying transport if it detects a disconnect,
-* or it can be manually called to force a disconnect.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Stat.eventNames"></a>[function <span class="apidocSignatureSpan">monitor.Stat.</span>eventNames ()](#apidoc.element.monitor.Stat.eventNames)
@@ -12123,23 +10212,7 @@ function removeListener(type, listener) {
 ```
 - example usage
 ```shell
-...
-  return t;
-},
-
-// Remove the specified event from the socket
-removeEvent: function(eventName) {
-  var t = this, socket = t.get('socket');
-  if (t.socketEvents && t.socketEvents[eventName]) {
-    socket.removeListener(eventName, t.socketEvents[eventName]);
-    delete t.socketEvents[eventName];
-  }
-  return t;
-},
-
-// Remove all events bound to the socket
-removeAllEvents: function() {
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Stat.setMaxListeners"></a>[function <span class="apidocSignatureSpan">monitor.Stat.</span>setMaxListeners (n)](#apidoc.element.monitor.Stat.setMaxListeners)
@@ -12183,23 +10256,7 @@ gauge = function (name, value){
 ```
 - example usage
 ```shell
-...
-proto.gauge = function(name, value){
-  Stat._emit(this.module, name, value, 'g');
-};
-
-/**
-* Record the specified duration (in milliseconds) for the stat
-*
-* This is like Stat.gauge() in that it is a client-side setting of a
-* specified value.  The difference is the scale of the value is specified
-* as milliseconds.
-*
-* This may be one of the most widely used stat methods.  It can (should?) be
-* used upon callback from asynchronous methods.
-*
-* Pattern:
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Stat.prototype.increment"></a>[function <span class="apidocSignatureSpan">monitor.Stat.prototype.</span>increment (name, value)](#apidoc.element.monitor.Stat.prototype.increment)
@@ -12212,23 +10269,7 @@ increment = function (name, value){
 ```
 - example usage
 ```shell
-...
-*
-* As a collector, it's a place to send application stats as they're discovered.
-*
-* Example for incrementing a stat in your application:
-*
-*     var stat = require('monitor').getStatLogger('myModule');
-*     ...
-*     stat.increment('requests.inbound');
-*
-* The above is a request to increment the '''myModule.requests.inbound''' stat.
-* It peforms work only if someone is listening for that event.
-*
-* Stat Emitter
-* -------------
-* As an emitter, Stat is a place to gather stats as they're collected.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.Stat.prototype.time"></a>[function <span class="apidocSignatureSpan">monitor.Stat.prototype.</span>time (name, duration)](#apidoc.element.monitor.Stat.prototype.time)
@@ -12240,23 +10281,7 @@ time = function (name, duration){
 ```
 - example usage
 ```shell
-...
-  }
-};
-probe.connectTime = Date.now();
-var duration = probe.connectTime - startTime;
-logCtxt.duration = duration;
-logCtxt.refCount = probe.refCount;
-log.info(t.logId + 'probeConnected', logCtxt);
-stat.time(t.logId + 'probeConnected', duration);
-callback(null, probe.toJSON());
-probe.on('change', monitorProxy.probeChange);
-
-// Disconnect the probe on connection disconnect
-t.on('disconnect', function() {
-  t.probeDisconnect({probeId:probeId});
-});
-...
+n/a
 ```
 
 
@@ -12280,23 +10305,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.StatProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.StatProbe.</span>extend (params)](#apidoc.element.monitor.StatProbe.extend)
@@ -12310,23 +10319,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -12377,23 +10370,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 
@@ -12417,23 +10394,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.StreamProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.StreamProbe.</span>extend (params)](#apidoc.element.monitor.StreamProbe.extend)
@@ -12447,23 +10408,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -12592,23 +10537,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.SyncProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.SyncProbe.</span>extend (params)](#apidoc.element.monitor.SyncProbe.extend)
@@ -12622,23 +10551,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 
@@ -12662,23 +10575,7 @@ List = function (){ parent.apply(this, arguments); }
 ```
 - example usage
 ```shell
-...
-  }
-
-});
-
-/**
-* Constructor for a list of Connection objects
-*
-*     var myList = new Connection.List(initialElements);
-*
-* @static
-* @method List
-* @param [items] {Array} Initial list items.  These can be raw JS objects or Connection data model objects.
-* @return {Backbone.Collection} Collection of Connection data model objects
-*/
-Connection.List = Backbone.Collection.extend({model: Connection});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.SyncProbe.FileSyncProbe.extend"></a>[function <span class="apidocSignatureSpan">monitor.SyncProbe.FileSyncProbe.</span>extend (params)](#apidoc.element.monitor.SyncProbe.FileSyncProbe.extend)
@@ -12692,23 +10589,7 @@ extend = function (params) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.SyncProbe.FileSyncProbe.getRootPath"></a>[function <span class="apidocSignatureSpan">monitor.SyncProbe.FileSyncProbe.</span>getRootPath ()](#apidoc.element.monitor.SyncProbe.FileSyncProbe.getRootPath)
@@ -13028,23 +10909,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.SyncProbe.FileSyncProbe.prototype.update_control"></a>[function <span class="apidocSignatureSpan">monitor.SyncProbe.FileSyncProbe.prototype.</span>update_control (args, callback)](#apidoc.element.monitor.SyncProbe.FileSyncProbe.prototype.update_control)
@@ -13177,23 +11042,7 @@ release = function () {
 ```
 - example usage
 ```shell
-...
-if (error) {
-  if (probeImpl) {
-    delete t.runningProbesByKey[probeKey];
-    delete t.runningProbesById[probeImpl.id];
-    try {
-      // This may fail depending on how many resources were created
-      // by the probe before failure.  Ignore errors.
-      probeImpl.release();
-    } catch (e){}
-  }
-  return callback(error);
-}
-
-// Probes are released based on reference count
-probeImpl.refCount++;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.SyncProbe.prototype.update_control"></a>[function <span class="apidocSignatureSpan">monitor.SyncProbe.prototype.</span>update_control (args, callback)](#apidoc.element.monitor.SyncProbe.prototype.update_control)
@@ -13294,22 +11143,7 @@ bind = function (func, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.bindAll"></a>[function <span class="apidocSignatureSpan">monitor._.</span>bindAll (obj)](#apidoc.element.monitor._.bindAll)
@@ -13349,23 +11183,7 @@ clone = function (obj) {
 ```
 - example usage
 ```shell
-...
-        var onConnect = function(error, probe) {
-if (error) {return callback(error);}
-probeJSON = probe.toJSON();
-probeJSON.probeId = probeJSON.id; delete probeJSON.id;
-monitor.probe = probe;
-
-// Keep the last known probe state for effective updating
-monitor._probeValues = _.clone(probeJSON);
-
-// Perform the initial set silently.  This assures the initial
-// probe contents are available on the connect event,
-// but doesn't fire a change event before connect.
-monitor.set(probeJSON, {silent:true});
-
-// Watch the probe for changes.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.collect"></a>[function <span class="apidocSignatureSpan">monitor._.</span>collect (obj, iterator, context)](#apidoc.element.monitor._.collect)
@@ -13582,22 +11400,7 @@ each = function (obj, iterator, context) {
 ```
 - example usage
 ```shell
-...
-  t.addHostCallbacks[hostName].forEach(function(cb) {
-    cb(error);
-  });
-  delete t.addHostCallbacks[hostName];
-};
-
-// Build the list of ports already connected
-t.connections.each(function(connection){
-  var host = connection.get('hostName').toLowerCase();
-  var port = connection.get('hostPort');
-  if (host === hostName && port >= portStart && port <= portEnd) {
-    connectedPorts.push(port);
-  }
-});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.escape"></a>[function <span class="apidocSignatureSpan">monitor._.</span>escape (string)](#apidoc.element.monitor._.escape)
@@ -13650,23 +11453,7 @@ extend = function (obj) {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.filter"></a>[function <span class="apidocSignatureSpan">monitor._.</span>filter (obj, iterator, context)](#apidoc.element.monitor._.filter)
@@ -13684,23 +11471,7 @@ filter = function (obj, iterator, context) {
 ```
 - example usage
 ```shell
-...
-    * @protected
-    * @param hostName {String} - Host name to search for (null = any host)
-    * @param appName {String} - App name to search for (null = any app)
-    * @return connections {Array of Connection} - An array of Connection objects matching the criteria
-    */
-    findConnections: function(hostName, appName) {
-      var t = this;
-      return t.connections.filter(function(conn) {
-
-// Host or app matches if not specified or if specified and equal
-var matchesHost = !hostName || conn.isThisHost(hostName);
-var matchesApp = !appName || appName === conn.get('remoteAppName');
-var remoteFirewall = conn.get('remoteFirewall');
-
-// This is a match if host + app matches, and it's not firewalled
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.find"></a>[function <span class="apidocSignatureSpan">monitor._.</span>find (obj, iterator, context)](#apidoc.element.monitor._.find)
@@ -13719,23 +11490,7 @@ find = function (obj, iterator, context) {
 ```
 - example usage
 ```shell
-...
-if (t.runningProbesByKey[probeName] || Probe.classes[probeClass] != null) {
-  return callback(null, null);
-}
-
-// Give named auto-start probes time to start up
-var autoStarts = Monitor.Config.Monitor.autoStart;
-if (probeName && !probeClass && autoStarts.length) {
-  var autoStart = Monitor._.find(autoStarts, function(probeDef) {
-    return probeDef.probeName === probeName;
-  });
-  if (autoStart) {
-    setTimeout(function() {
-      t.determineConnection(monitorJSON, makeNewConnections, callback);
-    },10);
-    return;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.findWhere"></a>[function <span class="apidocSignatureSpan">monitor._.</span>findWhere (obj, attrs)](#apidoc.element.monitor._.findWhere)
@@ -13857,23 +11612,7 @@ forEach = function (obj, iterator, context) {
 ```
 - example usage
 ```shell
-...
-
-  // Allow probes to be externally identified by name
-  if (probeJSON.probeName) {
-    return probeJSON.probeName;
-  }
-
-  if (initParams) {
-    _.keys(initParams).sort().forEach(function(key){
-      probeKey += ':' + key + '=' + initParams[key];
-    });
-  }
-  return probeKey;
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.functions"></a>[function <span class="apidocSignatureSpan">monitor._.</span>functions (obj)](#apidoc.element.monitor._.functions)
@@ -13915,23 +11654,7 @@ has = function (obj, key) {
 ```
 - example usage
 ```shell
-...
-
-// Cannot liveSync with a collection (too many issues)
-if (options.liveSync && model instanceof Backbone.Collection) {
-  return options.error(null, 'Cannot liveSync with a collection');
-}
-
-// Generate an ID if necessary
-if (!model.has('id')) {
-  if (method === METHOD_CREATE) {
-    model.set({id: Monitor.generateUniqueId()}, {silent: true});
-    logger.info('_sync.generateUniqueId', t.className, model.toJSON(), options);
-  } else {
-    return options.error(null, 'ID element must be set.');
-  }
-}
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.head"></a>[function <span class="apidocSignatureSpan">monitor._.</span>head (array, n, guard)](#apidoc.element.monitor._.head)
@@ -13996,23 +11719,7 @@ indexOf = function (array, item, isSorted) {
 ```
 - example usage
 ```shell
-...
-    set_control: function(attrs, callback) {
-var t = this,
-    writableAttributes = t.get('writableAttributes') || [];
-
-// Validate the attributes are writable
-if (writableAttributes !== '*') {
-  for (var attrName in attrs) {
-    if (writableAttributes.indexOf(attrName) < 0) {
-      return callback({code:'NOT_WRITABLE', msg: 'Attribute not writable: ' + attrName});
-    }
-  }
-}
-
-// Set the data
-var error = null;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.initial"></a>[function <span class="apidocSignatureSpan">monitor._.</span>initial (array, n, guard)](#apidoc.element.monitor._.initial)
@@ -14183,23 +11890,7 @@ isEqual = function (a, b) {
 ```
 - example usage
 ```shell
-...
-      };
-
-      // Client-side listener - for persisting changes to the server
-      var modelListener = function(changedModel, options) {
-options = options || {};
-
-// Don't persist unless the model is different
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(model.syncMonitor.get('model'))))) {
-  logger.info('modelListener.noChanges', t.className, model.toJSON());
-  return;
-}
-
-// Disconnect listeners if the ID changes
-if (model.get('id') !== modelId) {
-  logger.info('modelListener.alteredId', t.className, model.toJSON());
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.isFinite"></a>[function <span class="apidocSignatureSpan">monitor._.</span>isFinite (obj)](#apidoc.element.monitor._.isFinite)
@@ -14259,23 +11950,7 @@ isNumber = function (obj) {
 ```
 - example usage
 ```shell
-...
-* for maintaining the prior and new value for the stat.
-*
-* @method increment
-* @param name {String} Dot.separated name of the counter to increment
-* @param [value=1] {Number} Amount to increment the counter by.
-*/
-proto.increment = function(name, value){
-  value = _.isNumber(value) ? value : 1;
-  Stat._emit(this.module, name, value, 'c');
-};
-
-/**
-* Decrement a counter by a specified value
-*
-* Assuming someone is listening to this stat, this is an instruction for that
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.isObject"></a>[function <span class="apidocSignatureSpan">monitor._.</span>isObject (obj)](#apidoc.element.monitor._.isObject)
@@ -14323,23 +11998,7 @@ isUndefined = function (obj) {
 ```
 - example usage
 ```shell
-...
-    * @return connection {Connection} - The added connection
-    */
-    addConnection: function(options) {
-var t = this,
-    startTime = Date.now();
-
-// Default the firewall value
-if (_.isUndefined(options.firewall)) {
-  options = _.extend({},options, {firewall: t.firewall});
-}
-
-// Generate a unique ID for the connection
-options.id = Monitor.generateUniqueCollectionId(t.connections);
-
-var connStr = 'Conn_' + options.id;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.keys"></a>[function <span class="apidocSignatureSpan">monitor._.</span>keys ()](#apidoc.element.monitor._.keys)
@@ -14349,23 +12008,7 @@ function keys() { [native code] }
 ```
 - example usage
 ```shell
-...
-
-  // Exchange connection information
-  socket.emit('connection:info', {
-    hostName:Monitor.getRouter().getHostName(),
-    appName:Config.Monitor.appName,
-    appInstance: appInstance,
-    pid: pid,
-    probeClasses: _.keys(Probe.classes),
-    gateway:t.get('gateway'),
-    firewall:t.get('firewall')
-  });
-},
-
-/**
-* Process an inbound request to connect with a probe
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.last"></a>[function <span class="apidocSignatureSpan">monitor._.</span>last (array, n, guard)](#apidoc.element.monitor._.last)
@@ -14629,22 +12272,7 @@ pick = function (obj) {
 ```
 - example usage
 ```shell
-...
-  *   params for the class.
-  * @return {Object} The monitor parameters
-  */
-  Sync.prototype._getMonitorParams = function(modelId) {
-
-// Build server connection parameters from this instance of Sync
-var t = this;
-var params = _.pick(t.options, 'hostName', 'appName', 'appInstance');
-
-// Add probe and class parameters
-params.probeClass = 'Sync';
-params.initParams = {
-  className: t.className
-};
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.pluck"></a>[function <span class="apidocSignatureSpan">monitor._.</span>pluck (obj, key)](#apidoc.element.monitor._.pluck)
@@ -14850,23 +12478,7 @@ size = function (obj) {
 ```
 - example usage
 ```shell
-...
-var newModel = model.syncMonitor.get('model');
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(newModel)))) {
-  logger.info('monitorListener.noChanges', t.className, newModel);
-  return;
-}
-
-// Disconnect if the model was deleted or the ID isn't the same
-var isDeleted = (_.size(newModel) === 0);
-if (isDeleted || newModel.id !== modelId)  {
-  logger.info('modelListener.deleted', t.className, newModel);
-  disconnectListeners();
-}
-
-// Forward changes to the model (including server-side delete)
-var newOpts = {isSyncChanging:true};
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.some"></a>[function <span class="apidocSignatureSpan">monitor._.</span>some (obj, iterator, context)](#apidoc.element.monitor._.some)
@@ -15340,22 +12952,7 @@ bind = function () {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.bindAll"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>bindAll ()](#apidoc.element.monitor._.prototype.bindAll)
@@ -15396,23 +12993,7 @@ clone = function () {
 ```
 - example usage
 ```shell
-...
-        var onConnect = function(error, probe) {
-if (error) {return callback(error);}
-probeJSON = probe.toJSON();
-probeJSON.probeId = probeJSON.id; delete probeJSON.id;
-monitor.probe = probe;
-
-// Keep the last known probe state for effective updating
-monitor._probeValues = _.clone(probeJSON);
-
-// Perform the initial set silently.  This assures the initial
-// probe contents are available on the connect event,
-// but doesn't fire a change event before connect.
-monitor.set(probeJSON, {silent:true});
-
-// Watch the probe for changes.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.collect"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>collect ()](#apidoc.element.monitor._.prototype.collect)
@@ -15606,22 +13187,7 @@ each = function () {
 ```
 - example usage
 ```shell
-...
-  t.addHostCallbacks[hostName].forEach(function(cb) {
-    cb(error);
-  });
-  delete t.addHostCallbacks[hostName];
-};
-
-// Build the list of ports already connected
-t.connections.each(function(connection){
-  var host = connection.get('hostName').toLowerCase();
-  var port = connection.get('hostPort');
-  if (host === hostName && port >= portStart && port <= portEnd) {
-    connectedPorts.push(port);
-  }
-});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.escape"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>escape ()](#apidoc.element.monitor._.prototype.escape)
@@ -15663,23 +13229,7 @@ extend = function () {
 ```
 - example usage
 ```shell
-...
-  * Connected to remote monitor process
-  *
-  * This event is emitted after the two sides of the connection have exchanged
-  * information about themselves.
-  *
-  * @event connect
-  */
-  var Connection = Monitor.Connection = Backbone.Model.extend({
-
-defaults:  {
-  hostName: '',
-  hostPort: null,
-  url: null,
-  socket: null,
-  gateway: false,
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.filter"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>filter ()](#apidoc.element.monitor._.prototype.filter)
@@ -15693,23 +13243,7 @@ filter = function () {
 ```
 - example usage
 ```shell
-...
-    * @protected
-    * @param hostName {String} - Host name to search for (null = any host)
-    * @param appName {String} - App name to search for (null = any app)
-    * @return connections {Array of Connection} - An array of Connection objects matching the criteria
-    */
-    findConnections: function(hostName, appName) {
-      var t = this;
-      return t.connections.filter(function(conn) {
-
-// Host or app matches if not specified or if specified and equal
-var matchesHost = !hostName || conn.isThisHost(hostName);
-var matchesApp = !appName || appName === conn.get('remoteAppName');
-var remoteFirewall = conn.get('remoteFirewall');
-
-// This is a match if host + app matches, and it's not firewalled
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.find"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>find ()](#apidoc.element.monitor._.prototype.find)
@@ -15723,23 +13257,7 @@ find = function () {
 ```
 - example usage
 ```shell
-...
-if (t.runningProbesByKey[probeName] || Probe.classes[probeClass] != null) {
-  return callback(null, null);
-}
-
-// Give named auto-start probes time to start up
-var autoStarts = Monitor.Config.Monitor.autoStart;
-if (probeName && !probeClass && autoStarts.length) {
-  var autoStart = Monitor._.find(autoStarts, function(probeDef) {
-    return probeDef.probeName === probeName;
-  });
-  if (autoStart) {
-    setTimeout(function() {
-      t.determineConnection(monitorJSON, makeNewConnections, callback);
-    },10);
-    return;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.findWhere"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>findWhere ()](#apidoc.element.monitor._.prototype.findWhere)
@@ -15823,23 +13341,7 @@ forEach = function () {
 ```
 - example usage
 ```shell
-...
-
-  // Allow probes to be externally identified by name
-  if (probeJSON.probeName) {
-    return probeJSON.probeName;
-  }
-
-  if (initParams) {
-    _.keys(initParams).sort().forEach(function(key){
-      probeKey += ':' + key + '=' + initParams[key];
-    });
-  }
-  return probeKey;
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.functions"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>functions ()](#apidoc.element.monitor._.prototype.functions)
@@ -15881,23 +13383,7 @@ has = function () {
 ```
 - example usage
 ```shell
-...
-
-// Cannot liveSync with a collection (too many issues)
-if (options.liveSync && model instanceof Backbone.Collection) {
-  return options.error(null, 'Cannot liveSync with a collection');
-}
-
-// Generate an ID if necessary
-if (!model.has('id')) {
-  if (method === METHOD_CREATE) {
-    model.set({id: Monitor.generateUniqueId()}, {silent: true});
-    logger.info('_sync.generateUniqueId', t.className, model.toJSON(), options);
-  } else {
-    return options.error(null, 'ID element must be set.');
-  }
-}
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.head"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>head ()](#apidoc.element.monitor._.prototype.head)
@@ -15953,23 +13439,7 @@ indexOf = function () {
 ```
 - example usage
 ```shell
-...
-    set_control: function(attrs, callback) {
-var t = this,
-    writableAttributes = t.get('writableAttributes') || [];
-
-// Validate the attributes are writable
-if (writableAttributes !== '*') {
-  for (var attrName in attrs) {
-    if (writableAttributes.indexOf(attrName) < 0) {
-      return callback({code:'NOT_WRITABLE', msg: 'Attribute not writable: ' + attrName});
-    }
-  }
-}
-
-// Set the data
-var error = null;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.initial"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>initial ()](#apidoc.element.monitor._.prototype.initial)
@@ -16137,23 +13607,7 @@ isEqual = function () {
 ```
 - example usage
 ```shell
-...
-      };
-
-      // Client-side listener - for persisting changes to the server
-      var modelListener = function(changedModel, options) {
-options = options || {};
-
-// Don't persist unless the model is different
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(model.syncMonitor.get('model'))))) {
-  logger.info('modelListener.noChanges', t.className, model.toJSON());
-  return;
-}
-
-// Disconnect listeners if the ID changes
-if (model.get('id') !== modelId) {
-  logger.info('modelListener.alteredId', t.className, model.toJSON());
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.isFinite"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>isFinite ()](#apidoc.element.monitor._.prototype.isFinite)
@@ -16223,23 +13677,7 @@ isNumber = function () {
 ```
 - example usage
 ```shell
-...
-* for maintaining the prior and new value for the stat.
-*
-* @method increment
-* @param name {String} Dot.separated name of the counter to increment
-* @param [value=1] {Number} Amount to increment the counter by.
-*/
-proto.increment = function(name, value){
-  value = _.isNumber(value) ? value : 1;
-  Stat._emit(this.module, name, value, 'c');
-};
-
-/**
-* Decrement a counter by a specified value
-*
-* Assuming someone is listening to this stat, this is an instruction for that
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.isObject"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>isObject ()](#apidoc.element.monitor._.prototype.isObject)
@@ -16295,23 +13733,7 @@ isUndefined = function () {
 ```
 - example usage
 ```shell
-...
-    * @return connection {Connection} - The added connection
-    */
-    addConnection: function(options) {
-var t = this,
-    startTime = Date.now();
-
-// Default the firewall value
-if (_.isUndefined(options.firewall)) {
-  options = _.extend({},options, {firewall: t.firewall});
-}
-
-// Generate a unique ID for the connection
-options.id = Monitor.generateUniqueCollectionId(t.connections);
-
-var connStr = 'Conn_' + options.id;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.join"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>join ()](#apidoc.element.monitor._.prototype.join)
@@ -16337,23 +13759,7 @@ keys = function () {
 ```
 - example usage
 ```shell
-...
-
-  // Exchange connection information
-  socket.emit('connection:info', {
-    hostName:Monitor.getRouter().getHostName(),
-    appName:Config.Monitor.appName,
-    appInstance: appInstance,
-    pid: pid,
-    probeClasses: _.keys(Probe.classes),
-    gateway:t.get('gateway'),
-    firewall:t.get('firewall')
-  });
-},
-
-/**
-* Process an inbound request to connect with a probe
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.last"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>last ()](#apidoc.element.monitor._.prototype.last)
@@ -16563,22 +13969,7 @@ pick = function () {
 ```
 - example usage
 ```shell
-...
-  *   params for the class.
-  * @return {Object} The monitor parameters
-  */
-  Sync.prototype._getMonitorParams = function(modelId) {
-
-// Build server connection parameters from this instance of Sync
-var t = this;
-var params = _.pick(t.options, 'hostName', 'appName', 'appInstance');
-
-// Add probe and class parameters
-params.probeClass = 'Sync';
-params.initParams = {
-  className: t.className
-};
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.pluck"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>pluck ()](#apidoc.element.monitor._.prototype.pluck)
@@ -16622,23 +14013,7 @@ push = function () {
 ```
 - example usage
 ```shell
-...
-
-// Create an array to hold callbacks for this host
-if (!t.addHostCallbacks[hostName]) {
-  t.addHostCallbacks[hostName] = [];
-}
-
-// Remember this callback and return if we're already adding connections for this host
-if (t.addHostCallbacks[hostName].push(callback) > 1) {
-  return;
-}
-
-// Called when done
-var doneAdding = function(error) {
-  t.addHostCallbacks[hostName].forEach(function(cb) {
-    cb(error);
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.random"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>random ()](#apidoc.element.monitor._.prototype.random)
@@ -16808,23 +14183,7 @@ size = function () {
 ```
 - example usage
 ```shell
-...
-var newModel = model.syncMonitor.get('model');
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(newModel)))) {
-  logger.info('monitorListener.noChanges', t.className, newModel);
-  return;
-}
-
-// Disconnect if the model was deleted or the ID isn't the same
-var isDeleted = (_.size(newModel) === 0);
-if (isDeleted || newModel.id !== modelId)  {
-  logger.info('modelListener.deleted', t.className, newModel);
-  disconnectListeners();
-}
-
-// Forward changes to the model (including server-side delete)
-var newOpts = {isSyncChanging:true};
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.slice"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>slice ()](#apidoc.element.monitor._.prototype.slice)
@@ -16865,23 +14224,7 @@ sort = function () {
 ```
 - example usage
 ```shell
-...
-
-  // Allow probes to be externally identified by name
-  if (probeJSON.probeName) {
-    return probeJSON.probeName;
-  }
-
-  if (initParams) {
-    _.keys(initParams).sort().forEach(function(key){
-      probeKey += ':' + key + '=' + initParams[key];
-    });
-  }
-  return probeKey;
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor._.prototype.sortBy"></a>[function <span class="apidocSignatureSpan">monitor._.prototype.</span>sortBy ()](#apidoc.element.monitor._.prototype.sortBy)
@@ -17265,22 +14608,7 @@ bind = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-t.addEvent('disconnect', function(){t.disconnect('remote_disconnect');});
-t.addEvent('error', function(reason){
-  t.trigger('error', reason);
-  t.disconnect('connect error');
-});
-
-// Inbound probe events
-t.addEvent('probe:connect', t.probeConnect.bind(t));
-t.addEvent('probe:disconnect', t.probeDisconnect.bind(t));
-t.addEvent('probe:control', t.probeControl.bind(t));
-
-// Connection events
-t.addEvent('connection:ping', function(){socket.emit('connection:pong');});
-t.addEvent('connection:pong', function(){t.trigger('pong');});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.change"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>change (options)](#apidoc.element.monitor.__super__.change)
@@ -17332,23 +14660,7 @@ changedAttributes = function (diff) {
 ```
 - example usage
 ```shell
-...
-// Connect the montior proxy
-monitorProxy = new Monitor(monitorJSON);
-monitorProxy.set('probeId', probeId);
-t.incomingMonitorsById[probeId] = monitorProxy;
-monitorProxy.probe = probe;
-monitorProxy.probeChange = function(){
-  try {
-    t.emit('probe:change:' + probeId, probe.changedAttributes());
-  }
-  catch (e) {
-    log.error('probeChange', e, probe, logCtxt);
-  }
-};
-probe.connectTime = Date.now();
-var duration = probe.connectTime - startTime;
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.clear"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>clear (options)](#apidoc.element.monitor.__super__.clear)
@@ -17362,23 +14674,7 @@ clear = function (options) {
 ```
 - example usage
 ```shell
-...
-*
-* Live data synchronization consumes resources on both the client and server.
-* To release those resources, make sure to call the '''clear()''' method on
-* the data model. Otherwise, resources are released when the server connection
-* is terminated.
-*
-*     // Clear the object, turning off live synchronization
-*     myBook.clear();
-*
-* See the <a href="http://documentcloud.github.com/backbone/#Sync">Backbone documentation</a>
-* for more information about the Backbone.sync functionality.
-*
-* @static
-* @method Sync
-* @param className {String} Name of the class to synchronize with
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.clone"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>clone ()](#apidoc.element.monitor.__super__.clone)
@@ -17390,23 +14686,7 @@ clone = function () {
 ```
 - example usage
 ```shell
-...
-        var onConnect = function(error, probe) {
-if (error) {return callback(error);}
-probeJSON = probe.toJSON();
-probeJSON.probeId = probeJSON.id; delete probeJSON.id;
-monitor.probe = probe;
-
-// Keep the last known probe state for effective updating
-monitor._probeValues = _.clone(probeJSON);
-
-// Perform the initial set silently.  This assures the initial
-// probe contents are available on the connect event,
-// but doesn't fire a change event before connect.
-monitor.set(probeJSON, {silent:true});
-
-// Watch the probe for changes.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.destroy"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>destroy ()](#apidoc.element.monitor.__super__.destroy)
@@ -17506,23 +14786,7 @@ fetch = function () {
 ```
 - example usage
 ```shell
-...
-*       ...
-*     });
-*
-* The sync function can also be assigned to any Backbone model after construction:
-*
-*     var myBook = new Book({id:"44329"});
-*     myBook.sync = Monitor.Sync('Book');
-*     myBook.fetch();
-*
-* In addition to providing the standard '''fetch''', '''save''', and '''destroy'''
-* functionality, Sync offers *live data synchronization*, updating the data model
-* as changes are detected on the server.
-*
-*     // Turn on live data synchronization
-*     myBook.fetch({liveSync:true});
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.get"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>get (attr)](#apidoc.element.monitor.__super__.get)
@@ -17563,23 +14827,7 @@ has = function (attr) {
 ```
 - example usage
 ```shell
-...
-
-// Cannot liveSync with a collection (too many issues)
-if (options.liveSync && model instanceof Backbone.Collection) {
-  return options.error(null, 'Cannot liveSync with a collection');
-}
-
-// Generate an ID if necessary
-if (!model.has('id')) {
-  if (method === METHOD_CREATE) {
-    model.set({id: Monitor.generateUniqueId()}, {silent: true});
-    logger.info('_sync.generateUniqueId', t.className, model.toJSON(), options);
-  } else {
-    return options.error(null, 'ID element must be set.');
-  }
-}
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.hasChanged"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>hasChanged (attr)](#apidoc.element.monitor.__super__.hasChanged)
@@ -17668,23 +14916,7 @@ off = function (name, callback, context) {
 ```
 - example usage
 ```shell
-...
-* @method ping
-* @param callback {Function(error)} Callback when response is returned
-*/
-ping: function(callback) {
-  var t = this;
-  callback = callback || function(){};
-  var onPong = function() {
-    t.off('pong', onPong);
-    callback();
-  };
-  t.on('pong', onPong);
-  t.emit('connection:ping');
-},
-
-/**
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.on"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>on (name, callback, context)](#apidoc.element.monitor.__super__.on)
@@ -17749,23 +14981,7 @@ parse = function (resp) {
 ```
 - example usage
 ```shell
-...
-      };
-
-      // Client-side listener - for persisting changes to the server
-      var modelListener = function(changedModel, options) {
-options = options || {};
-
-// Don't persist unless the model is different
-if (_.isEqual(JSON.parse(JSON.stringify(model)), JSON.parse(JSON.stringify(model.syncMonitor.get('model'))))) {
-  logger.info('modelListener.noChanges', t.className, model.toJSON());
-  return;
-}
-
-// Disconnect listeners if the ID changes
-if (model.get('id') !== modelId) {
-  logger.info('modelListener.alteredId', t.className, model.toJSON());
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.previous"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>previous (attr)](#apidoc.element.monitor.__super__.previous)
@@ -17834,23 +15050,7 @@ save = function () {
 ```
 - example usage
 ```shell
-...
-  logger.info('modelListener.alteredId', t.className, model.toJSON());
-  return disconnectListeners();
-}
-
-// Persist changes to the server (unless the changes originated from there)
-if (!options.isSyncChanging) {
-  logger.info('modelListener.saving', t.className, model.toJSON());
-  model.save();
-}
-      };
-
-      // Server-side listener - for updating server changes into the model
-      var monitorListener = function(changedModel, options) {
-
-// Don't update unless the model is different
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.set"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>set (key, val, options)](#apidoc.element.monitor.__super__.set)
@@ -17900,23 +15100,7 @@ set = function (key, val, options) {
 ```
 - example usage
 ```shell
-...
-    connect: function() {
-var t = this, hostName = t.get('hostName'), hostPort = t.get('hostPort'),
-url = t.get('url');
-
-// Build the URL if not specified
-if (!url) {
-  url = t.attributes.url = 'http://' + hostName + ':' + hostPort;
-  t.set('url', url);
-}
-
-// Connect with this url
-var opts = {
-  // 'transports': ['websocket', 'xhr-polling', 'jsonp-polling'],
-  'force new connection': true,      // Don't re-use existing connections
-  'reconnect': false                 // Don't let socket.io reconnect.
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.stopListening"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>stopListening (object, events, callback)](#apidoc.element.monitor.__super__.stopListening)
@@ -17999,23 +15183,7 @@ trigger = function (name) {
 ```
 - example usage
 ```shell
-...
-
-  // Only disconnect once.
-  // This method can be called many times during a disconnect (manually,
-  // by socketIO disconnect, and/or by the underlying socket disconnect).
-  if (t.socketEvents) {
-    t.removeAllEvents();
-    socket.disconnect();
-    t.trigger('disconnect', reason);
-    log.info(t.logId + 'disconnect', reason);
-  }
-},
-
-/**
-* Is this connection with the specified host?
-*
-...
+n/a
 ```
 
 #### <a name="apidoc.element.monitor.__super__.unbind"></a>[function <span class="apidocSignatureSpan">monitor.__super__.</span>unbind (name, callback, context)](#apidoc.element.monitor.__super__.unbind)
@@ -18074,6 +15242,845 @@ url = function () {
   var base = _.result(this, 'urlRoot') || _.result(this.collection, 'url') || urlError();
   if (this.isNew()) return base;
   return base + (base.charAt(base.length - 1) === '/' ? '' : '/') + encodeURIComponent(this.id);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+
+
+# <a name="apidoc.module.monitor.model"></a>[module monitor.model](#apidoc.module.monitor.model)
+
+#### <a name="apidoc.element.monitor.model.model"></a>[function <span class="apidocSignatureSpan">monitor.</span>model ()](#apidoc.element.monitor.model.model)
+- description and source-code
+```javascript
+model = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Connection"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Connection ()](#apidoc.element.monitor.model.Connection)
+- description and source-code
+```javascript
+Connection = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.DataModelProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>DataModelProbe ()](#apidoc.element.monitor.model.DataModelProbe)
+- description and source-code
+```javascript
+DataModelProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.FileProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>FileProbe ()](#apidoc.element.monitor.model.FileProbe)
+- description and source-code
+```javascript
+FileProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.InspectProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>InspectProbe ()](#apidoc.element.monitor.model.InspectProbe)
+- description and source-code
+```javascript
+InspectProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.List"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>List ()](#apidoc.element.monitor.model.List)
+- description and source-code
+```javascript
+List = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Log"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Log (module)](#apidoc.element.monitor.model.Log)
+- description and source-code
+```javascript
+Log = function (module) {
+  var t = this;
+  t.module = module;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.LogProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>LogProbe ()](#apidoc.element.monitor.model.LogProbe)
+- description and source-code
+```javascript
+LogProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.PollingProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>PollingProbe ()](#apidoc.element.monitor.model.PollingProbe)
+- description and source-code
+```javascript
+PollingProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Probe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Probe ()](#apidoc.element.monitor.model.Probe)
+- description and source-code
+```javascript
+Probe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.ProcessProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>ProcessProbe ()](#apidoc.element.monitor.model.ProcessProbe)
+- description and source-code
+```javascript
+ProcessProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.RecipeProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>RecipeProbe ()](#apidoc.element.monitor.model.RecipeProbe)
+- description and source-code
+```javascript
+RecipeProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.ReplProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>ReplProbe ()](#apidoc.element.monitor.model.ReplProbe)
+- description and source-code
+```javascript
+ReplProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Router"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Router ()](#apidoc.element.monitor.model.Router)
+- description and source-code
+```javascript
+Router = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Server"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Server ()](#apidoc.element.monitor.model.Server)
+- description and source-code
+```javascript
+Server = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Stat"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Stat (module)](#apidoc.element.monitor.model.Stat)
+- description and source-code
+```javascript
+Stat = function (module) {
+  var t = this;
+  t.module = module;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.StatProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>StatProbe ()](#apidoc.element.monitor.model.StatProbe)
+- description and source-code
+```javascript
+StatProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.StreamProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>StreamProbe ()](#apidoc.element.monitor.model.StreamProbe)
+- description and source-code
+```javascript
+StreamProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.Sync"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>Sync (className, options)](#apidoc.element.monitor.model.Sync)
+- description and source-code
+```javascript
+Sync = function (className, options) {
+  if (!className) {
+    throw new Error('Sync class name must be provided');
+  }
+
+  // Get a Sync object and bind it to the sync function
+  var syncObj = new Sync(className, options);
+  return function(method, model, options) {
+    logger.info('sync', {className: className, method:method, model:model.toJSON(), options:options});
+    return syncObj._sync(method, model, options);
+  };
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.SyncProbe"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>SyncProbe ()](#apidoc.element.monitor.model.SyncProbe)
+- description and source-code
+```javascript
+SyncProbe = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model._"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>_ (obj)](#apidoc.element.monitor.model._)
+- description and source-code
+```javascript
+_ = function (obj) {
+  if (obj instanceof _) return obj;
+  if (!(this instanceof _)) return new _(obj);
+  this._wrapped = obj;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.deepCopy"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>deepCopy (value, depth)](#apidoc.element.monitor.model.deepCopy)
+- description and source-code
+```javascript
+deepCopy = function (value, depth) {
+
+  // Defaults
+  depth = typeof(depth) === 'undefined' ? DEFAULT_DEEP_COPY_DEPTH : depth;
+
+  // Simple value - return the raw value
+  if (typeof value !== 'object' && typeof value !== 'function') {
+    return value;
+  }
+
+  // Build a string representation of the type
+  var strType = '[Object]';
+  if (typeof value === 'function') {
+    strType = '[Function]';
+  } else if (Array.isArray(value)) {
+    strType = '[Array]';
+  }
+
+  // Limit reached
+  if (depth <= 0) {
+    return strType;
+  }
+
+  // Create a new object to copy into.
+  // Proactively add constructor so it's at the top of a function
+  var copy = Array.isArray(value) ? [] : {};
+
+  // Copy all elements (by reference)
+  for (var prop in value) {
+    if (!value.hasOwnProperty || value.hasOwnProperty(prop)) {
+      var elem = value[prop];
+      if (typeof elem === 'object' || typeof elem === 'function') {
+        copy[prop] = Monitor.deepCopy(elem, depth - 1);
+      }
+      else {
+        copy[prop] = elem;
+      }
+    }
+  }
+
+  // Special string formatting for functions
+  if (typeof value === 'function') {
+    if (_.isEmpty(copy)) {
+      // No sub-elements.  Identify it as a function.
+      copy = strType;
+    } else {
+      // Sub-elements exist.  Identify it as a function by placing
+      // a constructor at the top of the object
+      copy = _.extend({constructor: strType},copy);
+    }
+  }
+
+  // Return the copy
+  return copy;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.extend"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>extend (protoProps, staticProps)](#apidoc.element.monitor.model.extend)
+- description and source-code
+```javascript
+extend = function (protoProps, staticProps) {
+  var parent = this;
+  var child;
+
+  // The constructor function for the new subclass is either defined by you
+  // (the "constructor" property in your 'extend' definition), or defaulted
+  // by us to simply call the parent's constructor.
+  if (protoProps && _.has(protoProps, 'constructor')) {
+    child = protoProps.constructor;
+  } else {
+    child = function(){ parent.apply(this, arguments); };
+  }
+
+  // Add static properties to the constructor function, if supplied.
+  _.extend(child, parent, staticProps);
+
+  // Set the prototype chain to inherit from 'parent', without calling
+  // 'parent''s constructor function.
+  var Surrogate = function(){ this.constructor = child; };
+  Surrogate.prototype = parent.prototype;
+  child.prototype = new Surrogate;
+
+  // Add prototype properties (instance properties) to the subclass,
+  // if supplied.
+  if (protoProps) _.extend(child.prototype, protoProps);
+
+  // Set a convenience property in case the parent's prototype is needed
+  // later.
+  child.__super__ = parent.prototype;
+
+  return child;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.generateUniqueCollectionId"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>generateUniqueCollectionId (collection, prefix)](#apidoc.element.monitor.model.generateUniqueCollectionId)
+- description and source-code
+```javascript
+generateUniqueCollectionId = function (collection, prefix) {
+  var id = '';
+  prefix = prefix || '';
+
+  // First time - get the largest idSequence in the collection
+  if (!collection.idSequence) {
+    collection.idSequence = 0;
+    collection.forEach(function(item){
+      var id = item.get('id') || '',
+          sequence = +id.substr(prefix.length);
+      if (collection.idSequence <= sequence) {
+        collection.idSequence = sequence + 1;
+      }
+    });
+  }
+
+  return prefix + collection.idSequence++;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.generateUniqueId"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>generateUniqueId ()](#apidoc.element.monitor.model.generateUniqueId)
+- description and source-code
+```javascript
+generateUniqueId = function () {
+  // Generate a 4 digit random hex string
+  stat.increment('generateUniqueId');
+  function rhs4() {return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);}
+  return (rhs4()+rhs4()+"-"+rhs4()+"-"+rhs4()+"-"+rhs4()+"-"+rhs4()+rhs4()+rhs4());
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.getLogger"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>getLogger (module)](#apidoc.element.monitor.model.getLogger)
+- description and source-code
+```javascript
+getLogger = function (module) {
+  return new LoggerClass(module);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.getRouter"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>getRouter ()](#apidoc.element.monitor.model.getRouter)
+- description and source-code
+```javascript
+getRouter = function () {
+
+  // Instantiate a router if no default
+  if (!Monitor.defaultRouter) {
+    Monitor.defaultRouter = new Monitor.Router();
+
+    // If there's a global socket.io server available,
+    // then we're running on the browser.  Set the default
+    // gateway to the global io socket.
+    if (root.io) {
+      Monitor.defaultRouter.setGateway({
+        socket:root.io.connect()
+      });
+    }
+  }
+
+  // Return the router
+  return Monitor.defaultRouter;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.getStatLogger"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>getStatLogger (module)](#apidoc.element.monitor.model.getStatLogger)
+- description and source-code
+```javascript
+getStatLogger = function (module) {
+  return new StatLoggerClass(module);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.setLoggerClass"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>setLoggerClass (LoggerClass)](#apidoc.element.monitor.model.setLoggerClass)
+- description and source-code
+```javascript
+setLoggerClass = function (LoggerClass) {
+
+  // Build the getLogger function
+  Monitor.getLogger = function(module) {
+    return new LoggerClass(module);
+  };
+
+  // Get the logger for the Monitor module
+  log = Monitor.getLogger('Monitor');
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.setStatLoggerClass"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>setStatLoggerClass (StatLoggerClass)](#apidoc.element.monitor.model.setStatLoggerClass)
+- description and source-code
+```javascript
+setStatLoggerClass = function (StatLoggerClass) {
+
+  // Build the getStatLogger function
+  Monitor.getStatLogger = function(module) {
+    return new StatLoggerClass(module);
+  };
+
+  // Get the logger for the Monitor module
+  stat = Monitor.getStatLogger('Monitor');
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.start"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>start (options, callback)](#apidoc.element.monitor.model.start)
+- description and source-code
+```javascript
+start = function (options, callback) {
+  log.info('start', options);
+  callback = callback || function(){};
+
+  // Get a default monitor
+  if (!Monitor.defaultServer) {
+    Monitor.defaultServer = new Monitor.Server();
+    Monitor.defaultServer.start(options, callback);
+  } else {
+    callback();
+  }
+  return Monitor;
+}
+```
+- example usage
+```shell
+...
+
+Run the following from your app server directory
+
+    $ npm install monitor
+
+Then place the following line in your application bootstrap, and restart your server
+
+    require('monitor').start();
+
+Monitoring your app with a REPL console
+---------------------------------------
+
+Ad-hoc monitoring can be done from a REPL console.
+
+Start up the REPL, and get the Monitor class.  Feel free to copy/paste these lines into your console:
+...
+```
+
+#### <a name="apidoc.element.monitor.model.stop"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>stop (callback)](#apidoc.element.monitor.model.stop)
+- description and source-code
+```javascript
+stop = function (callback) {
+  log.info('stop');
+  callback = callback || function(){};
+  if (Monitor.defaultServer) {
+    Monitor.defaultServer.stop(callback);
+    delete Monitor.defaultServer;
+  } else {
+    callback();
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.stringify"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>stringify (value, depth, indent)](#apidoc.element.monitor.model.stringify)
+- description and source-code
+```javascript
+stringify = function (value, depth, indent) {
+
+  // Defaults
+  indent = typeof(indent) === 'undefined' ? 2 : indent;
+
+  // Return a stringified depth-limited deep copy
+  return JSON.stringify(Monitor.deepCopy(value, depth), null, indent);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.toServerString"></a>[function <span class="apidocSignatureSpan">monitor.model.</span>toServerString (monitorJSON)](#apidoc.element.monitor.model.toServerString)
+- description and source-code
+```javascript
+toServerString = function (monitorJSON) {
+  var str = monitorJSON.hostName;
+  if (monitorJSON.appName) {
+    str += ':' + monitorJSON.appName;
+    if (monitorJSON.appInstance) {
+      str += ':' + monitorJSON.appInstance;
+    }
+  }
+  return str;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+
+
+# <a name="apidoc.module.monitor.model.prototype"></a>[module monitor.model.prototype](#apidoc.module.monitor.model.prototype)
+
+#### <a name="apidoc.element.monitor.model.prototype.connect"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>connect (callback)](#apidoc.element.monitor.model.prototype.connect)
+- description and source-code
+```javascript
+connect = function (callback) {
+  var t = this, startTime = Date.now();
+  Monitor.getRouter().connectMonitor(t, function(error) {
+
+    // Monitor changes to writable attributes
+    if (!error && t.get('writableAttributes').length > 0) {
+      t.on('change', t.onChange, t);
+    }
+
+    // Give the caller first crack at knowing we're connected,
+    // followed by anyone registered for the connect event.
+    if (callback) {callback(error);}
+
+    // Initial data setting into the model was done silently
+    // in order for the connect event to fire before the first
+    // change event.  Fire the connect / change in the proper order.
+    if (!error) {
+
+      // An unfortunate side effect is any change listeners registered during
+      // connect will get triggered with the same values as during connect.
+      // To get around this, add change listeners from connect on nextTick.
+      t.trigger('connect', t);
+      t.trigger('change', t);
+
+      log.info('connected', {initParams: t.get('initParams'), probeId: t.get('probeId')});
+      stat.time('connect', Date.now() - startTime);
+    }
+  });
+}
+```
+- example usage
+```shell
+...
+undefined
+
+Now connect a monitor to a probe on your app server.  There are a handful of built-in probes, and you can build custom probes for
+ your application or npm module.
+
+For this example, we'll monitor the *Process* probe:
+
+> var processMonitor = new Monitor({probeClass:'Process'});
+> processMonitor.connect();
+
+The monitor is a [Backbone.js](http://backbonejs.org/) data model so it updates in real time, and you can get all fields with toJSON
+():
+
+> processMonitor.get('freemem');
+86368256
+> processMonitor.get('freemem');
+80044032
+...
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.constructor"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>constructor ()](#apidoc.element.monitor.model.prototype.constructor)
+- description and source-code
+```javascript
+constructor = function (){ parent.apply(this, arguments); }
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.control"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>control (name, params, callback)](#apidoc.element.monitor.model.prototype.control)
+- description and source-code
+```javascript
+control = function (name, params, callback) {
+  var t = this,
+      probe = t.probe,
+      logId = 'control.' + t.get('probeClass') + '.' + name,
+      startTime = Date.now();
+
+  // Switch callback if sent in 2nd arg
+  if (typeof params === 'function') {
+    callback = params;
+    params = null;
+  }
+
+  log.info(logId, params);
+
+  var whenDone = function(error, args) {
+    if (error) {
+      log.error(logId, error);
+    }
+    else {
+      log.info('return.' + logId, args);
+      stat.time(logId, Date.now() - startTime);
+    }
+
+    if (callback) {
+      callback.apply(t, arguments);
+    }
+  };
+
+  if (!probe) {
+    return whenDone('Probe not connected');
+  }
+
+  // Send the message internally or to the probe connection
+  if (probe.connection) {
+    probe.connection.emit('probe:control', {probeId: t.get('probeId'), name: name, params:params}, whenDone);
+  } else {
+    probe.onControl(name, params, whenDone);
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.disconnect"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>disconnect (callback)](#apidoc.element.monitor.model.prototype.disconnect)
+- description and source-code
+```javascript
+disconnect = function (callback) {
+  var t = this,
+      reason = 'manual_disconnect',
+      startTime = Date.now(),
+      probeId = t.get('probeId');
+
+  // Stop forwarding changes to the probe
+  t.off('change', t.onChange, t);
+
+  // Disconnect from the router
+  Monitor.getRouter().disconnectMonitor(t, reason, function(error, reason) {
+    if (callback) {callback(error);}
+    if (error) {
+      log.error('disconnect', {error: error});
+    }
+    else {
+      t.trigger('disconnect', reason);
+      log.info('disconnected', {reason: reason, probeId: probeId});
+      stat.time('disconnect', Date.now() - startTime);
+    }
+  });
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.getConnection"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>getConnection ()](#apidoc.element.monitor.model.prototype.getConnection)
+- description and source-code
+```javascript
+getConnection = function () {
+  var t = this;
+  return (t.probe && t.probe.connection ? t.probe.connection : null);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.initialize"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>initialize (params, options)](#apidoc.element.monitor.model.prototype.initialize)
+- description and source-code
+```javascript
+initialize = function (params, options) {
+  log.info('init', params);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.isConnected"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>isConnected ()](#apidoc.element.monitor.model.prototype.isConnected)
+- description and source-code
+```javascript
+isConnected = function () {
+  var t = this;
+  return (t.probe != null);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.onChange"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>onChange ()](#apidoc.element.monitor.model.prototype.onChange)
+- description and source-code
+```javascript
+onChange = function () {
+  var t = this,
+      writableAttributes = t.get('writableAttributes'),
+      writableChanges = {};
+
+  // Add any writable changes
+  var probeAttrs = t.toProbeJSON();
+  delete probeAttrs.id;
+  for (var attrName in probeAttrs) {
+    var isWritable = writableAttributes === '*' || writableAttributes.indexOf(attrName) >= 0;
+    if (isWritable && !(_.isEqual(t.attributes[attrName], t._probeValues[attrName]))) {
+      writableChanges[attrName] = t.attributes[attrName];
+    }
+  }
+
+  // Pass any writable changes on to control.set()
+  if (Monitor._.size(writableChanges)) {
+    t.control('set', writableChanges, function(error) {
+      if (error) {
+        log.error('probeSet', 'Problem setting writable value', writableChanges, t.toMonitorJSON());
+      }
+    });
+  }
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.toMonitorJSON"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>toMonitorJSON (options)](#apidoc.element.monitor.model.prototype.toMonitorJSON)
+- description and source-code
+```javascript
+toMonitorJSON = function (options) {
+  var t = this,
+      json = {};
+
+  // Transfer all monitor attrs
+  _.each(t.toJSON(options), function(value, key) {
+    if (key in t.defaults) {
+      json[key] = value;
+    }
+  });
+  return json;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.toProbeJSON"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>toProbeJSON (options)](#apidoc.element.monitor.model.prototype.toProbeJSON)
+- description and source-code
+```javascript
+toProbeJSON = function (options) {
+  var t = this,
+      json = {id: t.get('probeId')};
+
+  // Transfer all non-monitor attrs
+  _.each(t.toJSON(options), function(value, key) {
+    if (!(key in t.defaults)) {
+      json[key] = value;
+    }
+  });
+  return json;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.monitor.model.prototype.toServerString"></a>[function <span class="apidocSignatureSpan">monitor.model.prototype.</span>toServerString ()](#apidoc.element.monitor.model.prototype.toServerString)
+- description and source-code
+```javascript
+toServerString = function () {
+  return Monitor.toServerString(this.toMonitorJSON());
 }
 ```
 - example usage
