@@ -1,6 +1,6 @@
 # npmdoc-monitor
 
-#### api documentation for  [monitor (v0.6.10)](http://lorenwest.github.com/node-monitor/)  [![npm package](https://img.shields.io/npm/v/npmdoc-monitor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-monitor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-monitor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-monitor)
+#### basic api documentation for  [monitor (v0.6.10)](http://lorenwest.github.com/node-monitor/)  [![npm package](https://img.shields.io/npm/v/npmdoc-monitor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-monitor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-monitor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-monitor)
 
 #### Runtime monitoring for node.js applications
 
@@ -21,13 +21,33 @@
 ```json
 
 {
-    "name": "monitor",
-    "description": "Runtime monitoring for node.js applications",
-    "version": "0.6.10",
-    "main": "./lib/index.js",
     "author": {
         "name": "Loren West",
         "url": "https://github.com/lorenwest"
+    },
+    "bugs": {
+        "url": "https://github.com/lorenwest/node-monitor/issues"
+    },
+    "dependencies": {
+        "backbone": "0.9.9",
+        "backbone-callbacks": ">=0.1.4 <0.2.0",
+        "config": ">=0.4.34 <0.5.0",
+        "cron": ">=0.1.3 <0.2.0",
+        "socket.io": ">=0.9.10 <0.10.0",
+        "socket.io-client": ">=0.9.11 <0.10.0",
+        "underscore": ">=1.4.3 <1.5.0"
+    },
+    "description": "Runtime monitoring for node.js applications",
+    "devDependencies": {
+        "grunt": "0.3.17"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "c417100bf9dda876dc4146a12c5e852bd8ee08dc",
+        "tarball": "https://registry.npmjs.org/monitor/-/monitor-0.6.10.tgz"
+    },
+    "engines": {
+        "node": ">= 0.6.0"
     },
     "homepage": "http://lorenwest.github.com/node-monitor/",
     "keywords": [
@@ -38,35 +58,30 @@
         "probe",
         "JMX"
     ],
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/lorenwest/node-monitor.git"
-    },
     "licenses": [
         {
             "type": "MIT",
             "url": "https://github.com/lorenwest/node-monitor/blob/master/LICENSE"
         }
     ],
-    "dependencies": {
-        "config": ">=0.4.34 <0.5.0",
-        "cron": ">=0.1.3 <0.2.0",
-        "backbone": "0.9.9",
-        "underscore": ">=1.4.3 <1.5.0",
-        "backbone-callbacks": ">=0.1.4 <0.2.0",
-        "socket.io-client": ">=0.9.11 <0.10.0",
-        "socket.io": ">=0.9.10 <0.10.0"
-    },
-    "devDependencies": {
-        "grunt": "0.3.17"
-    },
-    "engines": {
-        "node": ">= 0.6.0"
+    "main": "./lib/index.js",
+    "maintainers": [
+        {
+            "name": "lorenwest"
+        }
+    ],
+    "name": "monitor",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/lorenwest/node-monitor.git"
     },
     "scripts": {
-        "test": "grunt test",
-        "start": "node monitor"
-    }
+        "start": "node monitor",
+        "test": "grunt test"
+    },
+    "version": "0.6.10",
+    "bin": {}
 }
 ```
 
